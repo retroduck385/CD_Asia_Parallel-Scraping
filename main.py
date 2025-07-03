@@ -10,7 +10,6 @@ from selenium.common.exceptions import StaleElementReferenceException, NoSuchEle
 
 import time
 import json
-import string
 
 from function import *
 
