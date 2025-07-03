@@ -13,7 +13,6 @@ import json
 
 from function import *
 
-
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 30)
 
