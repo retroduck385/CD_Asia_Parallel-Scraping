@@ -298,3 +298,32 @@ def get_references():
         output.append(elem.text)
 
     return output
+
+def scrape(url, count):
+
+    driver.get(url)
+
+    regulation_entry = {
+        "Ruling": f"{count}"
+    }
+
+    # Handling of main tabs
+    tab = "Original Law"
+
+    content = scrape_tabs(tab)
+
+    if content:    
+        regulation_entry[tab] = content
+
+    #Handling of Cited References
+    regulation_entry["Original Law"]["Cited Reference"] = {}
+
+    # references = ["Laws", "Taxation", "Jurisprudence"]
+    references = get_references()
+
+    for reference in references: 
+        reference_content = scrape_cited_reference(reference)
+        if reference_content:
+            regulation_entry["Original Law"]["Cited Reference"][reference] = reference_content
+
+    return regulation_entry
