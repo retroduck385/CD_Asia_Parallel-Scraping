@@ -8,6 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
 
+import concurrent.futures
+
 import time
 import json
 
@@ -314,7 +316,7 @@ def get_references():
 
     return output
 
-def scrape(url, count):
+def scrape(url):
 
     driver.get(url)
 
@@ -322,7 +324,7 @@ def scrape(url, count):
     driver.switch_to.window(driver.window_handles[-1])
 
     regulation_entry = {
-        "Ruling": f"{count}"
+        "Ruling": "1"
     }
 
     # Handling of main tabs
@@ -398,7 +400,7 @@ def main():
 
     # Step 8 Get all URLs
     urls = []
-    total_pages = 10
+    total_pages = 5
 
     for i in range (total_pages):
         urls.append(extract_url())
@@ -411,7 +413,13 @@ def main():
     print(urls)
 
     # Step 9 Multiprocessing
-    print(scrape(urls[0],1))
+    # print(scrape(urls[0],1))
+
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        results = executor.map(scrape, urls)
+
+        for result in results:
+            print(result)
 
     time.sleep(10)
 
