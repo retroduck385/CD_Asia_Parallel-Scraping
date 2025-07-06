@@ -1,10 +1,10 @@
 from main import *
 
 #Gets the URL
-def extract_url():
+def extract_url(driver):
     url = driver.current_url
 
-    return url
+    return url     
 
 #Checks if the contents contains an Annex
 def check_annex(content):
