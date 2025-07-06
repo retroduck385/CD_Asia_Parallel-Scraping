@@ -16,6 +16,11 @@ from function import *
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 30)
 
+#Gets the URL
+def extract_url():
+    url = driver.current_url
+
+    return url   
 
 def main():
     # Step 1: Go to login page
@@ -61,13 +66,12 @@ def main():
 
     #Step 6 Get all URL for the first page
     wait.until(EC.element_to_be_clickable((By.XPATH, "//table//tbody//tr[1]"))).click()
-
     urls = []
 
     total_page = 5
 
     for i in range(total_page):
-        urls.append(extract_url(driver))
+        urls.append(extract_url())
 
         if i < total_page - 1:
             time.sleep(2)

@@ -1,7 +1,7 @@
 from main import *
 
 #Gets the URL
-def extract_url(driver):
+def extract_url():
     url = driver.current_url
 
     return url     
