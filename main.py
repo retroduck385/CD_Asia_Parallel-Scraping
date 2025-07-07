@@ -142,8 +142,8 @@ def extract_row_case(driver: WebDriver) -> None:
     subject = get_subject(driver)
     to_info = get_to_info(driver)
     # details = get_details(driver)
+    # = get_cited_reference(driver)
     display_document_info(driver, date, reference_number, subject, to_info, None)
-    get_cited_reference(driver)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     WebDriverWait(driver, 10).until(
@@ -158,7 +158,7 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
 
 
 
-def get_details(driver:WebDriver) -> int: 
+def get_details(driver:WebDriver) -> str: 
 
     ## If there is a subject meaning scrape below it 
     if get_subject:
@@ -346,6 +346,7 @@ def handle_table(driver: WebDriver) -> None:
 
 ## e.g From Taxation -> BIR ->  BIR Citizen CHarter, Memorada, Primer, Revenue Memorandum Orders ... etc
 def click_content_subgroup(driver: WebDriver, content_subgrup: str) -> None:
+    time.sleep(5)
     try:
         # Wait for the content group to be clickable and then click it
         WebDriverWait(driver, 10).until(
