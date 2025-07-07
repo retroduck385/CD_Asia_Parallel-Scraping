@@ -3,18 +3,43 @@ from utils.driver_setup import initialize_driver
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-
-
+from selenium.webdriver.remote.webelement import WebElement
 import time
+import multiprocessing
 
+
+CASE_CONFIG = {
+
+    ## Adjust the Config Accrodingly 
+    "libraryItemNo": 3,
+    "libraryName": "Taxation",
+    "contents": [
+        {
+            "contentItemNo": "1",
+            "contentTitle": "Bureau of Internal Revenue (BIR)",
+        }
+    ]
+
+}
 
 ## 1. GO TO LOGIN PAGE WEBDRIVER WAIT UNTIL FIELDS ARE PRESENT AND FILL IN CREDENTIALS
 ## 2. INPUT CREDENTIALS AND CLICK LOGIN 
 ##  2.1 Check if there is a sign-in alert and click continue else continue
 # 3. Go to the HOMEPAGE, Check if the with WebDriver wait if the main page is loaded.
+
+
+def collect_row_metadata(driver: WebDriver) -> list[int]:
+    """
+    Return a list of row indexes to be used for parallel scraping.
+    """
+    fetch_table(driver)
+    rows = fetch_table_rows(driver)
+    rows_list = list(range(len(rows)))
+    print (f"[ROWS LIST]: {rows_list}")
+    return rows_list  # e.g. [0, 1, 2, ...]
+
 
 def wait_for_backdrop_to_disappear(driver: WebDriver) -> None:
     try:
@@ -31,56 +56,293 @@ def get_number_of_documents(driver: WebDriver) -> int:
     try:
         # Wait for the element that contains the number of documents
         element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[1]/span"))
+            EC.presence_of_element_located((
+                By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[1]/span"
+            ))
         )
-        # Extract the text and parse the number
-        text = element.text
-        number = int(text.split()[0])  # Assuming format like "123 Documents"
-        print(f"[✅STATUS] Found {number} documents.")
-        return number
+
+        # Wait until the text becomes a valid number        
+        for _ in range(10):  # Retry up to 10 times (~10s)
+            text = element.text.strip()
+            if text and not text.lower().startswith("searching"):
+                try:
+                    number = int(text.split()[0])  # e.g., "123 Documents"
+                    print(f"[✅STATUS] Found {number} documents.")
+                    return number
+                except ValueError:
+                    pass
+            time.sleep(1)
+
+        raise Exception("Timed out waiting for valid document count text.")
+
     except Exception as e:
         print(f"[❌STATUS] Error getting number of documents: {e}")
         return 0
 
 
-# def get_row_data() -> None:
-#     # Placeholder function for row data extraction logic
-#     pass
-
-
-# def navigate_to_next_page(driver: WebDriver) -> None:
-#     pass
-
-def get_table_data(driver: WebDriver) -> None:
-    documents_to_scrape = get_number_of_documents(driver)
-    row_start = 1
+def navigate_to_next_page(driver: WebDriver) -> None:
     try:
-        # Wait for the table to be present
-        table = WebDriverWait(driver, 10).until(
+        next_button = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[2]/nav/ul/li[10]/button"))
+        )
+
+        if "Mui-disabled" in next_button.get_attribute("class"):
+            print("[ℹ️STATUS] Reached last page. No more pages to scrape.")
+
+
+        # Scroll and wait a bit
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", next_button)
+        time.sleep(0.5)
+
+        try:
+            next_button.click()
+        except Exception as e:
+            print("[⚠️FALLBACK] Regular click failed, trying JS click.")
+            driver.execute_script("arguments[0].click();", next_button)
+
+        print("[🔁STATUS] Navigated to next page.")
+
+        # Wait for new table to load
+        WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//table"))
         )
-        print("[✅STATUS] Table found.")
-        
-        # Get all rows in the table body
-        rows = table.find_elements(By.XPATH, ".//tbody/tr")
-        print(f"[✅STATUS] Found {len(rows)} rows in the table.")
-        
-        # Extract data from each row
-        data = []
-        for row in rows:
-            print(f"[STATUS] Scraping row {row_start} of {documents_to_scrape}")
-            cells = row.find_elements(By.TAG_NAME, "td")
-            row_data = [cell.text for cell in cells]
-            data.append(row_data)
-            print(f"[✅STATUS] Row {row_start} data: {row_data}")
-            row_start += 1
+   
 
-
-        
-        return data
     except Exception as e:
-        print(f"[❌STATUS] Error getting table data: {e}")
-        return []
+        print(f"[❌STATUS] Error navigating to next page: {e}")
+
+
+    
+
+def get_rows_in_page(driver: WebDriver) -> int:
+    try:
+
+        # Get all rows in the table
+        rows = driver.find_elements(By.XPATH, "//table//tbody/tr")
+        print(f"[✅STATUS] Found {len(rows)} rows in the table of the current page.")
+        return len(rows)
+
+    except Exception as e:
+        print(f"[❌STATUS] Error getting rows in the current page: {e}")
+        return 0
+    
+
+def is_document_equal_row_scraped(current_row_scrape: int, documents_to_scrape: int) -> bool:
+    """
+    Check if the current row scraped is equal to the total number of documents to scrape.
+    """
+    return current_row_scrape == documents_to_scrape
+
+
+
+def extract_row_case(driver: WebDriver) -> None:
+    
+    date = get_doc_date(driver)
+    reference_number = get_ref_number(driver)
+    subject = get_subject(driver)
+    to_info = get_to_info(driver)
+    # details = get_details(driver)
+    display_document_info(driver, date, reference_number, subject, to_info, None)
+    get_cited_reference(driver)
+
+def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
+    )
+    print(f"[✅ STATUS] Cited Reference Table Loaded")
+
+    container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
+    print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
+
+    return {}
+
+
+
+def get_details(driver:WebDriver) -> int: 
+
+    ## If there is a subject meaning scrape below it 
+    if get_subject:
+        print(f'🔁 [STATUS] Subject Exist')
+        subject = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
+        )
+    ## Else Scrape everything below the reference number 
+    else:
+        reference_number = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#reference_no > span"))
+        )
+        
+def get_ref_number (driver: WebDriver) -> str:
+    try:
+        # Wait for the element that contains the regulation number
+        element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#reference_no > span"))
+        )
+        reg_no = element.text.strip()
+        print(f"[✅STATUS] Found Regulation Number: {reg_no}")
+        return reg_no
+    except Exception as e:
+        print(f"[⚠️FALLBACK TRIGGERED] Trying Fallback:")        
+        element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > p:nth-child(3)"))
+        )
+        reg_no = element.text.strip()
+        print(f"[✅STATUS] Found Regulation Number: {reg_no}")
+        return reg_no
+    except Exception as e:
+        print(f"[❌STATUS] Error getting Regulation Number: {e}")
+        return None
+
+def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, details: str, ) -> None:
+    print("\n [ℹ️STATUS] Displaying Document Information:")
+    print("\t ================INFO================ \n ")
+    print(f"\t[ℹ️ Date]: {date if date else None}")
+    print(f"\t[ℹ️ Ref Number]: {ref_number if ref_number else None}")
+    if subject_info:
+        print(f"\t[ℹ️ Subject]: {subject_info}")
+        if to_info:
+            print(f"\t[ℹ️ To]: {to_info}")
+        else:
+            print("\t[ℹ️ To]: Not available for this document.")
+    else:
+        print("\t[ℹ️ Subject]: Not available for this document.")
+        print("\t[ℹ️ To]: Not available for this document.")
+    print(f"\t[ℹ️ Details]: {details[:100] if details else None}...")  # Display first 100 characters of details
+    print("\t ================INFO================ \n ")
+
+def get_doc_date (driver: WebDriver) -> str:
+    try:
+        # Wait for the element that contains the regulation date
+        element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > p:nth-child(2)"))
+        )
+        doc_date = element.text.strip()
+        print(f"[✅STATUS] Found Document Date: {doc_date}")
+        return doc_date
+    except Exception as e:
+        print(f"[❌STATUS] Error getting Document Date: {e}")
+        return None
+    
+def get_to_info (driver: WebDriver) -> str:
+    try:
+        # Wait for the first <tr> to be present
+        trow = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div:nth-child(4) > table > tbody > tr:nth-child(3)"))
+        )
+        td_elements = trow.find_elements(By.TAG_NAME, "td")
+        to_info_parts = [td.text.strip() for td in td_elements[2:]]
+        to_info = " ".join(to_info_parts)
+        print(f"[✅STATUS] Found TO Info: {to_info}")
+        return to_info
+    except Exception as e:
+        print(f"[❌STATUS] The TO Info is not available for the document")
+        return None
+    
+## IF THERE IS SUBJECT, THERE IS ALSO TO INFO
+def get_subject(driver: WebDriver) -> str:
+    try:
+        # Wait for the first <tr> to be present
+        trow = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div:nth-child(4) > table > tbody > tr:nth-child(1)"))
+        )
+
+        # Get all <td> elements inside the row
+        td_elements = trow.find_elements(By.TAG_NAME, "td")
+
+        if len(td_elements) <= 2:
+            print("[⚠️STATUS] Index is less than or equal to 2.")
+            print("⚠️STATUS] Subject is not available for the document.")
+            return None
+
+        # Get the text of <td>s from index 2 and onward
+        subject_parts = [td.text.strip() for td in td_elements[2:]]
+        subject = " ".join(subject_parts)  # Join with space, change separator if needed
+
+        print(f"[✅STATUS] Found Subject: {subject}")
+        return subject
+    except Exception as e:
+        print(f"[❌STATUS] Error getting Subject: {e}")
+        return None
+    
+
+def fetch_table(driver: WebDriver) -> WebElement:
+    table = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//table"))
+            )
+    print("[✅STATUS] Table found.")
+    return table 
+
+
+def fetch_table_rows(driver: WebDriver) -> WebElement:
+    table = fetch_table(driver)
+    rows = table.find_elements(By.XPATH, ".//tbody/tr")
+    print(f"[✅STATUS] Found {len(rows)} rows in the table.")
+    return rows 
+
+
+
+
+def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scraped: int, page_number: int, documents_to_scrape: int) -> int:
+
+    print(f"[✅STATUS] Scraping Page: {page_number}.")
+    ##REFETCH TABLE
+
+    fetch_table(driver)
+    rows = fetch_table_rows(driver)
+
+    for row in rows: 
+        try:
+            original_window = driver.current_window_handle
+            print(f'[✅STATUS] Scraping row {total_row_scraped + 1} of {documents_to_scrape} documents...')
+            element = row.find_element(By.TAG_NAME, "td")
+            driver.execute_script("arguments[0].scrollIntoView(true);", element)
+            time.sleep(0.3)
+            driver.execute_script("arguments[0].click();", element)
+            total_row_scraped = total_row_scraped + 1
+
+                    # ## Window Handling 
+
+            WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))  
+            new_window = [window for window in driver.window_handles if window != original_window][0]
+            driver.switch_to.window(new_window)
+            try:
+                extract_row_case(driver)
+            except Exception as e:
+                print(e)
+            finally:
+                driver.close()
+                driver.switch_to.window(original_window)
+            
+        except Exception as e: 
+            print(e)
+
+    return total_row_scraped
+
+def handle_table(driver: WebDriver) -> None:
+    documents_to_scrape = get_number_of_documents(driver)
+    current_row_scraped = 0
+    total_row_scraped = 0
+    page_number = 1
+    max_rows_per_page = 20 ## adjust this later in the config 
+
+    while total_row_scraped != documents_to_scrape:
+        fetch_table(driver)
+        rows = fetch_table_rows(driver)
+        total_row_scraped = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
+
+
+        current_row_scraped += current_row_scraped + 1 
+        page_number += 1 
+         
+        if current_row_scraped == max_rows_per_page: 
+            navigate_to_next_page(driver)
+            print("[🔁Next Page] Navigated to the next page.")    
+            fetch_table(driver)
+            current_row_scraped = 0 
+        
+        if total_row_scraped > documents_to_scrape:
+            break
+
 
 ## e.g From Taxation -> BIR ->  BIR Citizen CHarter, Memorada, Primer, Revenue Memorandum Orders ... etc
 def click_content_subgroup(driver: WebDriver, content_subgrup: str) -> None:
@@ -98,7 +360,7 @@ def click_content_subgroup(driver: WebDriver, content_subgrup: str) -> None:
         print(f"[✅STATUS] Clicked on content subgroup with CSS Selector: {content_subgrup}")
         # time.sleep(10)  # Wait for the content to load
     except Exception as e:
-        print(f"[❌STATUS] Error clicking content subgroup: {e}")
+        print(f"[❌STATUS] Error clicking content subgroup: Page did not load or slow connection. Retry Again ! or See Exception: {e}")
 
 
 ## Open Contents of the Filtered Item (e.g From Taxation -> BIR Directories, BIR Forms, Rulings etc .)
@@ -181,9 +443,6 @@ def sign_in_alert_present(driver: WebDriver) -> bool:
         print("[❌STATUS] No sign-in alert shown.")
         return False
         
-
-
-
 def fill_login_field(driver: WebDriver) -> None:
 # Fill credentials
     WebDriverWait(driver, 10).until(
@@ -222,18 +481,13 @@ def scrape(driver: WebDriver, base_url: str, item_xpath: str, content_group: str
         click_item_button_in_library_tabs(driver, item_xpath)
         click_contents_item (driver, content_group)
         click_content_subgroup(driver, content_subgroup)
-        get_table_data(driver)
+        handle_table(driver)
 
         
         
     else:
         print(f"[❌STATUS] Failed to click Libraries dropdown, cannot proceed to XPath: {item_xpath}  button.")
 
-
-    # Step 3: Click the Item in Contents Page
-
-    
-        
 
 
 def main():
@@ -269,156 +523,3 @@ def main():
 if __name__ == "__main__":
     main()  
 
-# def main():
-#     # Step 1: Go to login page
-#     driver.get("https://cdasiaonline.com/")
-
-#     # Fill credentials
-#     input_element = driver.find_element(By.ID, "user-id")
-#     input_element.clear()
-#     input_element.send_keys("accounting@onecfoph.co")
-#     input_element = driver.find_element(By.ID, "user-password")
-#     input_element.clear()
-#     input_element.send_keys("HU9W19pr" + Keys.ENTER)
-
-#     # Step 1.5: Handle Sign-in Alert
-#     try:
-#         wait.until(
-#             EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Continue")]'))
-#         ).click()
-#         print("Handled sign-in alert.")
-#     except:
-#         print("No sign-in alert shown.")
-
-#     # Step 2: After login, click the "Libraries" dropdown
-#     time.sleep(5)
-#     wait.until(EC.element_to_be_clickable((By.ID, "library-menu-button"))).click()
-
-#     # Step 3: Click the "Taxation" checkbox
-#     wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'Taxation')]/ancestor::label"))).click()
-#     time.sleep(2) 
-
-#     # Step 3.5: Click a neutral part of the page to close the dropdown
-#     body_element = driver.find_element(By.TAG_NAME, "body")
-#     body_element.click()
-#     time.sleep(1) 
-
-#     #Step 4 Click BIR
-#     wait.until(EC.visibility_of_element_located((By.XPATH, "//li[.//span[contains(text(), 'Bureau of Internal Revenue (BIR)')]]"))).click()
-#     time.sleep(2)
-
-#     #Step 5 Click Rulings
-#     element = wait.until(EC.element_to_be_clickable((By.XPATH, "//li[.//span[contains(text(), 'Rulings (Numbered)')]]")))
-#     driver.execute_script("arguments[0].scrollIntoView(true);", element)
-#     time.sleep(0.5)
-#     element.click()
-#     time.sleep(2)
-
-#     #5.5 Click the Page Number X amount of times
-#     #The page - 1
-#     for i in range (100):
-#         time.sleep(1)
-#         wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
-#         print("Click next page button")
-#         time.sleep(2)
-
-
-#     #Step 6 Click on the first Regulation
-#     time.sleep(3)
-#     wait.until(EC.element_to_be_clickable((By.XPATH, "//table//tbody//tr[1]"))).click()
-
-#     #Step 7 Switch to the new tab
-#     time.sleep(2)
-#     driver.switch_to.window(driver.window_handles[-1])
-
-#     # print(extract_url())
-
-#     case_data = {"libraryItemNo": 3,
-#                 "libraryName": "Taxation",
-#                 "contents": [
-#                     {
-#                         "contentItemNo": "1",
-#                         "contentTitle": "Bureau of Internal Revenue (BIR)",
-#                         "subContent": [
-#                             {
-#                                 "subcontentItemNo": "20",
-#                                 "subcontentTitle": "Rulings (Numbered)",
-#                                 "case": [
-                                
-#                                 ]
-#                             }
-#                         ]
-#                     }
-#                 ]
-#             }
-
-#     case_list = case_data["contents"][0]["subContent"][0]["case"]
-
-#     #Edit count 
-#     count = 2000
-
-#     # for i in range(1600):
-#     #     time.sleep(2)
-#     #     wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
-#     #     print("Click next page button")
-#     #     count+=1
-#     #     time.sleep(2)
-
-#     time.sleep(2)
-
-#     #Change this range to the number of pages
-#     for i in range(700):  
-
-#         count+=1
-
-#         regulation_entry = {
-#             "Ruling": f"{count}"
-#         }
-
-#         print(f"Scraping Regulation No: {count}")
-        
-#         # tabs = ["Original Law","Cited-In"]
-#         # case_data[f"Regulation {i+1}"] = {}
-        
-#         #Handling of main tabs
-#         tabs = ["Original Law"]
-
-#         for tab in tabs:
-#             content = scrape_tabs(tab)
-#             if content:    
-#                 # case_data[f"Regulation {i+1}"][tab] = content
-#                 regulation_entry[tab] = content
-
-#         #Handling of Cited References
-#         regulation_entry["Original Law"]["Cited Reference"] = {}
-#         # references = ["Laws", "Taxation", "Jurisprudence"]
-#         references = get_references()
-
-#         for reference in references: 
-#             reference_content = scrape_cited_reference(reference)
-#             if reference_content:
-#                 regulation_entry["Original Law"]["Cited Reference"][reference] = reference_content
-
-
-#         case_list.append(regulation_entry)
-
-#         if i !=1:
-#             time.sleep(2)
-#             wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
-#             print("Click next page button")
-#             time.sleep(2)
-
-
-#     print(json.dumps(case_data, indent=4, ensure_ascii=False))
-
-#     filename = "BIR_Revenue_Rulings(Numbered)(4).json"
-
-#     with open(filename, 'w') as file:
-#         json.dump(case_data, file, indent=4)
-
-#     time.sleep(10)
-
-#     driver.quit()
-
-# if __name__ == "__main__":
-#     main()
