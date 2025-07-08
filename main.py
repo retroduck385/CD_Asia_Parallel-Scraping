@@ -141,9 +141,10 @@ def extract_row_case(driver: WebDriver) -> None:
     reference_number = get_ref_number(driver)
     subject = get_subject(driver)
     to_info = get_to_info(driver)
-    # details = get_details(driver)
-    # = get_cited_reference(driver)
-    display_document_info(driver, date, reference_number, subject, to_info, None)
+    url = get_url(driver)
+    details = get_details(driver)
+    cited_reference = get_cited_reference(driver)
+    display_document_info(driver, date, reference_number, subject, to_info, url, None)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     WebDriverWait(driver, 10).until(
@@ -156,7 +157,11 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
 
     return {}
 
+def get_url(driver: WebDriver) -> str:
 
+    ## Gets the URL
+    url = driver.current_url
+    return url
 
 def get_details(driver:WebDriver) -> str: 
 
@@ -193,11 +198,12 @@ def get_ref_number (driver: WebDriver) -> str:
         print(f"[❌STATUS] Error getting Regulation Number: {e}")
         return None
 
-def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, details: str, ) -> None:
+def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, details: str, ) -> None:
     print("\n [ℹ️STATUS] Displaying Document Information:")
     print("\t ================INFO================ \n ")
     print(f"\t[ℹ️ Date]: {date if date else None}")
     print(f"\t[ℹ️ Ref Number]: {ref_number if ref_number else None}")
+    print(f"\t[ℹ️ URL]: {url if url else None}")
     if subject_info:
         print(f"\t[ℹ️ Subject]: {subject_info}")
         if to_info:
