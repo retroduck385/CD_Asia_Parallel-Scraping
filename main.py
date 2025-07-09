@@ -147,6 +147,7 @@ def extract_row_case(driver: WebDriver) -> None:
     display_document_info(driver, date, reference_number, subject, to_info, url, None)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
+    
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
     )
@@ -155,7 +156,33 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
     print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
 
+    if get_cited_reference_header(driver):
+        pass
+
+    else: 
+        pass
     return {}
+
+def get_cited_reference_header(driver: WebDriver) -> list:
+
+    headers = []
+
+    ## Get h2 elements for the title of the Cited Reference
+    try:
+        h2_elements  = driver.find_elements(By.XPATH, "//h2[contains(@class, 'MuiTypography-h2')]")
+
+        ## If there is a h2 element append it in headers list
+        if h2_elements:
+            for elem in h2_elements:
+                headers.append(elem.text)
+            
+            return headers
+        ## Else just return an empty headers list
+        else:
+            return headers
+        
+    except Exception as e:
+        print(f"[❌ UNEXPECTED ERROR] {e}")
 
 def get_url(driver: WebDriver) -> str:
 
