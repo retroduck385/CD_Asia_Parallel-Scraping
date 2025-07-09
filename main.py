@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 import time
 import multiprocessing
+import json
 
 
 CASE_CONFIG = {
@@ -19,9 +20,17 @@ CASE_CONFIG = {
         {
             "contentItemNo": "1",
             "contentTitle": "Bureau of Internal Revenue (BIR)",
+            "subContents": [
+                {
+                    "subcontentItemNo": "19",
+                    "subcontentTitle": "Revenue Memorandum Order",
+                    "case": [
+                               
+                    ]
+                }
+            ]
         }
     ]
-
 }
 
 ## 1. GO TO LOGIN PAGE WEBDRIVER WAIT UNTIL FIELDS ARE PRESENT AND FILL IN CREDENTIALS
@@ -135,7 +144,7 @@ def is_document_equal_row_scraped(current_row_scrape: int, documents_to_scrape: 
 
 
 
-def extract_row_case(driver: WebDriver) -> None:
+def extract_row_case(driver: WebDriver, total_row_scraped: int) -> None:
     
     date = get_doc_date(driver)
     reference_number = get_ref_number(driver)
@@ -145,6 +154,26 @@ def extract_row_case(driver: WebDriver) -> None:
     details = get_details(driver)
     cited_reference = get_cited_reference(driver)
     display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, details)
+    append_data_info(driver, date, reference_number, subject, to_info, url, cited_reference, details,total_row_scraped)
+
+def append_data_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict, total_row_scraped: int) -> None:
+    regulation_entry = {
+        "regulationNo": f"{total_row_scraped}"
+    }
+
+    regulation_entry["Original Law"] = {
+        "Date": date,
+        "Reference Number": ref_number,
+        "Subject": subject_info,
+        "To": to_info,
+        "URL": url,
+        "Details": details
+    }
+
+    if cited_reference:
+        regulation_entry["Cited Reference"] = cited_reference
+
+    CASE_CONFIG["contents"][0]["subContents"][0]["case"].append(regulation_entry)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     cited_reference = {}
@@ -278,7 +307,6 @@ def get_details(driver:WebDriver) -> dict:
             curr_annex = None
 
             for p in all_p_tags:
-                    # Check if this is the footnote marker
                     p_class = p.get_attribute("class")
                     text = p.text.strip()
                     links = p.find_elements(By.TAG_NAME, "a") 
@@ -355,7 +383,7 @@ def get_ref_number (driver: WebDriver) -> str:
         print(f"[❌STATUS] Error getting Regulation Number: {e}")
         return None
 
-def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict, ) -> None:
+def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict) -> None:
     print("\n [ℹ️STATUS] Displaying Document Information:")
     print("\t ================INFO================ \n ")
     print(f"\t[ℹ️ Date]: {date if date else None}")
@@ -468,7 +496,7 @@ def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scrape
             new_window = [window for window in driver.window_handles if window != original_window][0]
             driver.switch_to.window(new_window)
             try:
-                extract_row_case(driver)
+                extract_row_case(driver, total_row_scraped)
             except Exception as e:
                 print(e)
             finally:
@@ -675,6 +703,11 @@ def main():
     except Exception as e:
         print(e)
     finally:
+        print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
+        filename = "BIR_Revenue_Revenue_Memorandum_Order.json"
+        with open(filename, 'w') as file:
+            json.dump(CASE_CONFIG, file, indent=4)
+
         driver.quit()
         end_time = time.time()  # ⏱️ End timer
         elapsed = end_time - start_time
