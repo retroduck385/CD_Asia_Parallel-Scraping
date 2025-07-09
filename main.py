@@ -144,7 +144,7 @@ def extract_row_case(driver: WebDriver) -> None:
     url = get_url(driver)
     details = get_details(driver)
     cited_reference = get_cited_reference(driver)
-    display_document_info(driver, date, reference_number, subject, to_info, url, None)
+    display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, None)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     
@@ -172,17 +172,48 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
 
                 ## If yes scrape the specific reference
                 if is_expanded:
+                    pass
+                else:
+                    WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, f"//button[.//h2[text()='{reference}']]"))).click()
+                    time.sleep(2) 
+    
+                last_height = 0
+                scroll_attempts = 0
+                max_scrolls = 10 
 
+                while scroll_attempts < max_scrolls:
+                    driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", container)
+                    time.sleep(1)
 
+                    new_height = driver.execute_script("return arguments[0].scrollTop", container)
 
+                    if new_height == last_height:
+                            break 
+                    last_height = new_height
+                    scroll_attempts += 1
 
+                rows = driver.find_elements(By.XPATH, "//tbody[@class='MuiTableBody-root table-row-even mui-2u4x71']/tr")
 
-            except 
+                reference_entries = []
+                for row in rows:
+                    cols = row.find_elements(By.TAG_NAME, "td")
+                    if len(cols) >= 3:
+                            reference_entry = {
+                                "Reference Number": cols[0].text,
+                                "Title": cols[1].text,
+                                "Date": cols[2].text
+                            }
 
+                    reference_entries.append(reference_entry)
+
+                cited_reference[reference] = reference_entries
+
+            except Exception as e:
+                print(f"[❌STATUS] Error getting Cited Reference: {e}")
     else: 
         pass
     
-    return {}
+    return cited_reference
 
 def get_cited_reference_header(driver: WebDriver) -> list:
 
@@ -246,7 +277,7 @@ def get_ref_number (driver: WebDriver) -> str:
         print(f"[❌STATUS] Error getting Regulation Number: {e}")
         return None
 
-def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, details: str, ) -> None:
+def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: str, ) -> None:
     print("\n [ℹ️STATUS] Displaying Document Information:")
     print("\t ================INFO================ \n ")
     print(f"\t[ℹ️ Date]: {date if date else None}")
@@ -262,6 +293,7 @@ def display_document_info(driver: WebDriver, date: str, ref_number: str, subject
         print("\t[ℹ️ Subject]: Not available for this document.")
         print("\t[ℹ️ To]: Not available for this document.")
     print(f"\t[ℹ️ Details]: {details[:100] if details else None}...")  # Display first 100 characters of details
+    print(f"\t[ℹ️ Cited Reference]: {cited_reference if cited_reference else None}...")
     print("\t ================INFO================ \n ")
 
 def get_doc_date (driver: WebDriver) -> str:
