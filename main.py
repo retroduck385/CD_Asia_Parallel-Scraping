@@ -156,11 +156,32 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
     print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
 
-    if get_cited_reference_header(driver):
-        pass
+    references = get_cited_reference_header(driver)
+
+    ## Main Dicttionary
+    cited_reference = {}
+
+    if references:
+        for reference in references:
+            try:
+                ## Find the dropdown button of each reference
+                dropdown = driver.find_element(By.XPATH, f"//button[.//h2[text()='{reference}']]")
+
+                ## Check if the button is alreay drop downed
+                is_expanded = dropdown.get_attribute("aria-expanded") == "true"
+
+                ## If yes scrape the specific reference
+                if is_expanded:
+
+
+
+
+
+            except 
 
     else: 
         pass
+    
     return {}
 
 def get_cited_reference_header(driver: WebDriver) -> list:
