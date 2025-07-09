@@ -509,7 +509,7 @@ def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scrape
     return total_row_scraped
 
 def handle_table(driver: WebDriver) -> None:
-    ## CHANGE THIS MY LAPTOP CAN'T HANDLE IT
+    ## CHANGED THIS MY LAPTOP CAN'T HANDLE IT
     # documents_to_scrape = get_number_of_documents(driver)
     documents_to_scrape = 800
     current_row_scraped = 0
