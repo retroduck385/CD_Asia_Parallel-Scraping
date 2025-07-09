@@ -144,75 +144,88 @@ def extract_row_case(driver: WebDriver) -> None:
     url = get_url(driver)
     details = get_details(driver)
     cited_reference = get_cited_reference(driver)
-    display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, None)
+    display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, details)
 
 def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
-    
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
-    )
-    print(f"[✅ STATUS] Cited Reference Table Loaded")
-
-    container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
-    print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
-
-    references = get_cited_reference_header(driver)
-
-    ## Main Dicttionary
     cited_reference = {}
 
-    if references:
-        for reference in references:
-            try:
-                ## Find the dropdown button of each reference
-                dropdown = driver.find_element(By.XPATH, f"//button[.//h2[text()='{reference}']]")
+    try:
+        # Wait for the cited reference table to load
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
+        )
+        print(f"[✅ STATUS] Cited Reference Table Loaded")
 
-                ## Check if the button is alreay drop downed
-                is_expanded = dropdown.get_attribute("aria-expanded") == "true"
+        try:
+            container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
+            print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
+        except Exception as e:
+            print(f"[❌ ERROR] Failed to locate the table container: {e}")
+            return cited_reference
 
-                ## If yes scrape the specific reference
-                if is_expanded:
-                    pass
-                else:
-                    WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, f"//button[.//h2[text()='{reference}']]"))).click()
-                    time.sleep(2) 
-    
-                last_height = 0
-                scroll_attempts = 0
-                max_scrolls = 10 
+        try:
+            references = get_cited_reference_header(driver)
+        except Exception as e:
+            print(f"[❌ ERROR] Failed to get reference headers: {e}")
+            return cited_reference
 
-                while scroll_attempts < max_scrolls:
-                    driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", container)
-                    time.sleep(1)
+        if references:
+            for reference in references:
+                try:
+                    # Locate the dropdown button
+                    dropdown = WebDriverWait(driver, 5).until(
+                        EC.presence_of_element_located((By.XPATH, f"//button[.//h2[text()='{reference}']]"))
+                    )
 
-                    new_height = driver.execute_script("return arguments[0].scrollTop", container)
+                    # Check if already expanded
+                    is_expanded = dropdown.get_attribute("aria-expanded") == "true"
 
-                    if new_height == last_height:
-                            break 
-                    last_height = new_height
-                    scroll_attempts += 1
+                    if not is_expanded:
+                        WebDriverWait(driver, 5).until(
+                            EC.element_to_be_clickable((By.XPATH, f"//button[.//h2[text()='{reference}']]"))
+                        ).click()
+                        time.sleep(2)
 
-                rows = driver.find_elements(By.XPATH, "//tbody[@class='MuiTableBody-root table-row-even mui-2u4x71']/tr")
+                    # Scroll the container to load all rows
+                    last_height = 0
+                    scroll_attempts = 0
+                    max_scrolls = 10
 
-                reference_entries = []
-                for row in rows:
-                    cols = row.find_elements(By.TAG_NAME, "td")
-                    if len(cols) >= 3:
+                    while scroll_attempts < max_scrolls:
+                        driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", container)
+                        time.sleep(1)
+                        new_height = driver.execute_script("return arguments[0].scrollTop", container)
+
+                        if new_height == last_height:
+                            break
+
+                        last_height = new_height
+                        scroll_attempts += 1
+
+                    # Scrape the rows
+                    rows = driver.find_elements(By.XPATH, "//tbody[@class='MuiTableBody-root table-row-even mui-2u4x71']/tr")
+                    reference_entries = []
+
+                    for row in rows:
+                        cols = row.find_elements(By.TAG_NAME, "td")
+                        if len(cols) >= 3:
                             reference_entry = {
-                                "Reference Number": cols[0].text,
-                                "Title": cols[1].text,
-                                "Date": cols[2].text
+                                "Reference Number": cols[0].text.strip(),
+                                "Title": cols[1].text.strip(),
+                                "Date": cols[2].text.strip()
                             }
+                            reference_entries.append(reference_entry)
 
-                    reference_entries.append(reference_entry)
+                    cited_reference[reference] = reference_entries
 
-                cited_reference[reference] = reference_entries
+                except Exception as e:
+                    print(f"[❌ ERROR] Failed to process reference '{reference}': {e}")
+        else:
+            print("[⚠️ WARNING] No references found")
 
-            except Exception as e:
-                print(f"[❌STATUS] Error getting Cited Reference: {e}")
-    else: 
-        pass
-    
+    except Exception as e:
+        print(f"[❌ CRITICAL ERROR] Failed to load cited references section: {e}")
+
     return cited_reference
 
 def get_cited_reference_header(driver: WebDriver) -> list:
@@ -235,6 +248,7 @@ def get_cited_reference_header(driver: WebDriver) -> list:
         
     except Exception as e:
         print(f"[❌ UNEXPECTED ERROR] {e}")
+        return None
 
 def get_url(driver: WebDriver) -> str:
 
@@ -242,20 +256,84 @@ def get_url(driver: WebDriver) -> str:
     url = driver.current_url
     return url
 
-def get_details(driver:WebDriver) -> str: 
+def get_details(driver:WebDriver) -> dict: 
 
-    ## If there is a subject meaning scrape below it 
-    if get_subject:
-        print(f'🔁 [STATUS] Subject Exist')
-        subject = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
-        )
-    ## Else Scrape everything below the reference number 
-    else:
-        reference_number = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#reference_no > span"))
-        )
+    retries = 3
+    for attempt in range(retries):
+        try:            
+            tab_panel = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//div[starts-with(@id, 'simple-tabpanel-') and not(@hidden)]")))
+            
+            print(f"[✅ STATUS] Content Panel Loaded on Attempt {attempt + 1}")
+            
+            # Get the text inside the panel
+            try:
+                all_p_tags = tab_panel.find_elements(By.XPATH, ".//p")
+            except Exception as e:
+                print(f"[❌ ERROR] Failed to extract <p> tags: {e}")
+                continue
+
+            details = []
+            footnotes = []
+            annex_sections = {}
+            curr_annex = None
+
+            for p in all_p_tags:
+                    # Check if this is the footnote marker
+                    p_class = p.get_attribute("class")
+                    text = p.text.strip()
+                    links = p.find_elements(By.TAG_NAME, "a") 
+
+                    if not text:
+                        continue
+                    if p_class == "footnote-area":
+                        footnotes.append(p.text.strip())
+                    elif text.startswith("ANNEX"):
+                        curr_annex = text
+                        annex_sections[curr_annex] = {"details": [], "links": []}
+                    elif curr_annex:
+                        annex_sections[curr_annex]["details"].append(text)
+                        for link in links:
+                            href = link.get_attribute("href")
+                            annex_sections[curr_annex]["links"].append(href)
+                    else:
+                        details.append(p.text.strip())
+            
+            # Clean out any empty text entries
+            filtered_details = []
+            for line in details:
+                if line:  
+                    filtered_details.append(line)
+            details = filtered_details
+                
+            filtered_footnotes = []
+            for line in footnotes:
+                if line:  
+                    filtered_footnotes.append(line)
+            footnotes = filtered_footnotes
+
+            for annex, lines in annex_sections.items():
+                filtered_lines = []
+                for line in lines["details"]:
+                    if line.strip():  
+                        filtered_lines.append(line)
+                annex_sections[annex]["details"] = "\n\n".join(filtered_lines)
+
+
+            details = {
+                "Details": "\n\n".join(details[2:]),
+                "Footnote": "\n\n".join(footnotes) if footnotes else "No footnotes found",
+                "Annexes": annex_sections if annex_sections else "No annexes found"
+            }
+
+            return details
         
+        except Exception as e:
+            print(f"[❌ ERROR] Attempt {attempt + 1} failed: {e}")
+            time.sleep(2)  
+
+    print(f"[❌ ERROR] Giving up after {retries} failed attempts.")
+    return None
+
 def get_ref_number (driver: WebDriver) -> str:
     try:
         # Wait for the element that contains the regulation number
@@ -277,7 +355,7 @@ def get_ref_number (driver: WebDriver) -> str:
         print(f"[❌STATUS] Error getting Regulation Number: {e}")
         return None
 
-def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: str, ) -> None:
+def display_document_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict, ) -> None:
     print("\n [ℹ️STATUS] Displaying Document Information:")
     print("\t ================INFO================ \n ")
     print(f"\t[ℹ️ Date]: {date if date else None}")
@@ -292,7 +370,7 @@ def display_document_info(driver: WebDriver, date: str, ref_number: str, subject
     else:
         print("\t[ℹ️ Subject]: Not available for this document.")
         print("\t[ℹ️ To]: Not available for this document.")
-    print(f"\t[ℹ️ Details]: {details[:100] if details else None}...")  # Display first 100 characters of details
+    print(f"\t[ℹ️ Details]: {details if details else None}...")  # Display first 100 characters of details
     print(f"\t[ℹ️ Cited Reference]: {cited_reference if cited_reference else None}...")
     print("\t ================INFO================ \n ")
 
@@ -364,8 +442,6 @@ def fetch_table_rows(driver: WebDriver) -> WebElement:
     rows = table.find_elements(By.XPATH, ".//tbody/tr")
     print(f"[✅STATUS] Found {len(rows)} rows in the table.")
     return rows 
-
-
 
 
 def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scraped: int, page_number: int, documents_to_scrape: int) -> int:
