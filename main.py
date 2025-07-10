@@ -518,14 +518,14 @@ def initial_pagination(driver: WebDriver) -> None:
 def handle_table(driver: WebDriver) -> None:
     ## CHANGED THIS MY LAPTOP CAN'T HANDLE IT
     # documents_to_scrape = get_number_of_documents(driver)
-    documents_to_scrape = 800
+    documents_to_scrape = 1000
     current_row_scraped = 0
     total_row_scraped = 0
-    # page_number = 1
-    page_number = 801
+    page_number = 1
+    # page_number = 801
     max_rows_per_page = 20 ## adjust this later in the config 
 
-    initial_pagination(driver)
+    # initial_pagination(driver)
 
     while total_row_scraped != documents_to_scrape:
         fetch_table(driver)
