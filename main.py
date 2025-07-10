@@ -508,14 +508,22 @@ def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scrape
 
     return total_row_scraped
 
+## Used to paginate X amount of time in the Subcontent Page 
+def initial_pagination(driver: WebDriver) -> None:
+    for i in range (40):
+        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
+
 def handle_table(driver: WebDriver) -> None:
     ## CHANGED THIS MY LAPTOP CAN'T HANDLE IT
     # documents_to_scrape = get_number_of_documents(driver)
     documents_to_scrape = 800
     current_row_scraped = 0
     total_row_scraped = 0
-    page_number = 1
+    # page_number = 1
+    page_number = 801
     max_rows_per_page = 20 ## adjust this later in the config 
+
+    initial_pagination(driver)
 
     while total_row_scraped != documents_to_scrape:
         fetch_table(driver)
