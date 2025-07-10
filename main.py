@@ -516,7 +516,7 @@ def initial_pagination(driver: WebDriver) -> None:
         WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
 
 def handle_table(driver: WebDriver) -> None:
-    ## CHANGED THIS MY LAPTOP CAN'T HANDLE IT
+    ## CHANGE THIS MY LAPTOP CAN'T HANDLE IT
     # documents_to_scrape = get_number_of_documents(driver)
     documents_to_scrape = 1000
     current_row_scraped = 0
@@ -533,7 +533,7 @@ def handle_table(driver: WebDriver) -> None:
         total_row_scraped = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
 
 
-        current_row_scraped += current_row_scraped + 1 
+        current_row_scraped = current_row_scraped + 1 
         page_number += 1 
          
         if current_row_scraped == max_rows_per_page: 
