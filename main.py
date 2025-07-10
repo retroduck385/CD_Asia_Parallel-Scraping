@@ -510,7 +510,9 @@ def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scrape
 
 ## Used to paginate X amount of time in the Subcontent Page 
 def initial_pagination(driver: WebDriver) -> None:
-    for i in range (40):
+
+    ## The page -1
+    for i in range (39):
         WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
 
 def handle_table(driver: WebDriver) -> None:
