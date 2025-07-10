@@ -516,16 +516,11 @@ def initial_pagination(driver: WebDriver) -> None:
         WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
 
 def handle_table(driver: WebDriver) -> None:
-    ## CHANGE THIS MY LAPTOP CAN'T HANDLE IT
-    # documents_to_scrape = get_number_of_documents(driver)
-    documents_to_scrape = 1000
+    documents_to_scrape = get_number_of_documents(driver)
     current_row_scraped = 0
     total_row_scraped = 0
     page_number = 1
-    # page_number = 801
     max_rows_per_page = 20 ## adjust this later in the config 
-
-    # initial_pagination(driver)
 
     while total_row_scraped != documents_to_scrape:
         fetch_table(driver)
@@ -544,7 +539,6 @@ def handle_table(driver: WebDriver) -> None:
         
         if total_row_scraped > documents_to_scrape:
             break
-
 
 ## e.g From Taxation -> BIR ->  BIR Citizen CHarter, Memorada, Primer, Revenue Memorandum Orders ... etc
 def click_content_subgroup(driver: WebDriver, content_subgrup: str) -> None:
