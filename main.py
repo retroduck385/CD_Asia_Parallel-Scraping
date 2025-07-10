@@ -533,7 +533,7 @@ def handle_table(driver: WebDriver) -> None:
         total_row_scraped = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
 
 
-        current_row_scraped = current_row_scraped + 1 
+        current_row_scraped += current_row_scraped + 1 
         page_number += 1 
          
         if current_row_scraped == max_rows_per_page: 
