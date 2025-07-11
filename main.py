@@ -525,19 +525,19 @@ def handle_table(driver: WebDriver) -> None:
     while total_row_scraped != documents_to_scrape:
         fetch_table(driver)
         rows = fetch_table_rows(driver)
-        total_row_scraped = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
+        rows_scraped_this_page = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
 
-
-        current_row_scraped += current_row_scraped + 1
-        page_number += 1 
+        current_row_scraped += rows_scraped_this_page
+        total_row_scraped += rows_scraped_this_page
+        page_number += 1
          
-        if current_row_scraped == max_rows_per_page: 
+        if current_row_scraped >= max_rows_per_page: 
             navigate_to_next_page(driver)
             print("[🔁Next Page] Navigated to the next page.")    
             fetch_table(driver)
             current_row_scraped = 0 
         
-        if total_row_scraped > documents_to_scrape:
+        if total_row_scraped >= documents_to_scrape:
             break
 
 ## e.g From Taxation -> BIR ->  BIR Citizen CHarter, Memorada, Primer, Revenue Memorandum Orders ... etc
