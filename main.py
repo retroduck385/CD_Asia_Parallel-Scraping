@@ -472,41 +472,44 @@ def fetch_table_rows(driver: WebDriver) -> WebElement:
     return rows 
 
 
-def click_elements_per_row(driver: WebDriver, rows: WebElement, total_row_scraped: int, page_number: int, documents_to_scrape: int) -> int:
-
+def click_elements_per_row(driver: WebDriver, total_row_scraped: int, page_number: int, documents_to_scrape: int) -> int:
     print(f"[✅STATUS] Scraping Page: {page_number}.")
-    ##REFETCH TABLE
+    rows = fetch_table_rows(driver)  
+    rows_scraped_this_page = 0       
 
-    fetch_table(driver)
-    rows = fetch_table_rows(driver)
+    for row in rows:
+        if total_row_scraped >= documents_to_scrape:  
+            break
 
-    for row in rows: 
         try:
             original_window = driver.current_window_handle
             print(f'[✅STATUS] Scraping row {total_row_scraped + 1} of {documents_to_scrape} documents...')
+
             element = row.find_element(By.TAG_NAME, "td")
             driver.execute_script("arguments[0].scrollIntoView(true);", element)
             time.sleep(0.3)
             driver.execute_script("arguments[0].click();", element)
-            total_row_scraped = total_row_scraped + 1
 
-                    # ## Window Handling 
-
-            WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))  
+            WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))
             new_window = [window for window in driver.window_handles if window != original_window][0]
             driver.switch_to.window(new_window)
+
             try:
-                extract_row_case(driver, total_row_scraped)
+                extract_row_case(driver, total_row_scraped + 1)
             except Exception as e:
                 print(e)
             finally:
                 driver.close()
                 driver.switch_to.window(original_window)
-            
-        except Exception as e: 
+
+            total_row_scraped += 1
+            rows_scraped_this_page += 1 
+
+        except Exception as e:
             print(e)
 
-    return total_row_scraped
+    return rows_scraped_this_page  
+
 
 ## Used to paginate X amount of time in the Subcontent Page 
 def initial_pagination(driver: WebDriver) -> None:
@@ -524,8 +527,7 @@ def handle_table(driver: WebDriver) -> None:
 
     while total_row_scraped != documents_to_scrape:
         fetch_table(driver)
-        rows = fetch_table_rows(driver)
-        rows_scraped_this_page = click_elements_per_row(driver, rows, total_row_scraped, page_number, documents_to_scrape)
+        rows_scraped_this_page = click_elements_per_row(driver, total_row_scraped, page_number, documents_to_scrape)
 
         current_row_scraped += rows_scraped_this_page
         total_row_scraped += rows_scraped_this_page
@@ -534,7 +536,6 @@ def handle_table(driver: WebDriver) -> None:
         if current_row_scraped >= max_rows_per_page: 
             navigate_to_next_page(driver)
             print("[🔁Next Page] Navigated to the next page.")    
-            fetch_table(driver)
             current_row_scraped = 0 
         
         if total_row_scraped >= documents_to_scrape:
