@@ -112,11 +112,11 @@ def navigate_to_next_page(driver: WebDriver) -> None:
         print("[🔁STATUS] Navigated to next page.")
 
         # Wait for new table to load
+        time.sleep(2)
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//table"))
         )
    
-
     except Exception as e:
         print(f"[❌STATUS] Error navigating to next page: {e}")
 
@@ -526,7 +526,6 @@ def handle_table(driver: WebDriver) -> None:
     max_rows_per_page = 20 ## adjust this later in the config 
 
     while total_row_scraped != documents_to_scrape:
-        fetch_table(driver)
         rows_scraped_this_page = click_elements_per_row(driver, total_row_scraped, page_number, documents_to_scrape)
 
         current_row_scraped += rows_scraped_this_page
@@ -535,7 +534,7 @@ def handle_table(driver: WebDriver) -> None:
          
         if current_row_scraped >= max_rows_per_page: 
             navigate_to_next_page(driver)
-            print("[🔁Next Page] Navigated to the next page.")    
+            print("[🔁Next Page] Navigated to the next page.") 
             current_row_scraped = 0 
         
         if total_row_scraped >= documents_to_scrape:
