@@ -158,7 +158,7 @@ def extract_row_case(driver: WebDriver, total_row_scraped: int) -> None:
     details = get_details(driver)
     cited_reference = get_cited_reference(driver)
     display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, details)
-    append_data_info(driver, date, reference_number, subject, to_info, url, cited_reference, details,total_row_scraped)
+    append_data_info(driver, date, reference_number, subject, to_info, url, cited_reference, details, total_row_scraped)
 
 def append_data_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict, total_row_scraped: int) -> None:
     regulation_entry = {
@@ -537,20 +537,17 @@ def handle_table(driver: WebDriver) -> None:
 
     ## Change this to the amount you want to jump to
     scraped_documents = initial_pagination(driver, get_page_number(1480))
-    # print(f"[TEST] Scraped Documents:", scraped_documents)
+    documents_to_scrape = get_number_of_documents(driver) - scraped_documents
+    current_row_scraped = 0
+    total_row_scraped = scraped_documents
+    page_number = scraped_documents + 1
 
     #Bring this back if start from start
     # documents_to_scrape = get_number_of_documents(driver) 
-
-    documents_to_scrape = get_number_of_documents(driver) - scraped_documents
-    # print(f"[TEST] Documents to Scrape:", documents_to_scrape)
-    current_row_scraped = 0
-    total_row_scraped = 0
-
-    #Bring this back if start from start
+    # current_row_scraped = 0
+    # total_row_scraped = 0
     # page_number = 1
 
-    page_number = scraped_documents + 1
     max_rows_per_page = 20 ## adjust this later in the config 
 
     while total_row_scraped != documents_to_scrape:
