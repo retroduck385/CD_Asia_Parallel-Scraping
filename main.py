@@ -7,9 +7,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 import time
-import multiprocessing
 import json
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+email = os.getenv("EMAIL")
+password = os.getenv("PASSWORD")
 
 CASE_CONFIG = {
 
@@ -648,10 +652,10 @@ def fill_login_field(driver: WebDriver) -> None:
     print("🔑 Filling in login credentials")
     input_element = driver.find_element(By.ID, "user-id")
     input_element.clear()
-    input_element.send_keys("accounting@onecfoph.co")
+    input_element.send_keys(f"{email}")
     input_element = driver.find_element(By.ID, "user-password")
     input_element.clear()
-    input_element.send_keys("HU9W19pr" + Keys.ENTER)
+    input_element.send_keys(f"{password}" + Keys.ENTER)
 
     if sign_in_alert_present(driver):
         
@@ -710,7 +714,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Revenue_Revenue_Memorandum_Order.json"
+        filename = "BIR_Revenue_Revenue_Memorandum_Order(2).json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 

@@ -1,0 +1,17 @@
+{
+    "libraryItemNo": 3,
+    "libraryName": "Taxation",
+    "contents": [
+        {
+            "contentItemNo": "1",
+            "contentTitle": "Bureau of Internal Revenue (BIR)",
+            "subContents": [
+                {
+                    "subcontentItemNo": "19",
+                    "subcontentTitle": "Revenue Memorandum Order",
+                    "case": []
+                }
+            ]
+        }
+    ]
+}
