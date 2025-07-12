@@ -10,6 +10,13 @@ from selenium.common.exceptions import StaleElementReferenceException, NoSuchEle
 
 import time
 import json
+import os
+from dotenv  import load_dotenv
+
+load_dotenv()
+
+email = os.getenv("EMAIL")
+password = os.getenv("PASSWORD")
 
 from function import *
 
@@ -23,10 +30,10 @@ def main():
     # Fill credentials
     input_element = driver.find_element(By.ID, "user-id")
     input_element.clear()
-    input_element.send_keys("accounting@onecfoph.co")
+    input_element.send_keys("email")
     input_element = driver.find_element(By.ID, "user-password")
     input_element.clear()
-    input_element.send_keys("HU9W19pr" + Keys.ENTER)
+    input_element.send_keys("password" + Keys.ENTER)
 
     # Step 1.5: Handle Sign-in Alert
     try:
