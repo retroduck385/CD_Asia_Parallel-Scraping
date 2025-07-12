@@ -537,7 +537,7 @@ def handle_table(driver: WebDriver) -> None:
 
     ## Change this to the amount you want to jump to
     scraped_documents = initial_pagination(driver, get_page_number(1480))
-    documents_to_scrape = get_number_of_documents(driver) - scraped_documents
+    documents_to_scrape = get_number_of_documents(driver)
     current_row_scraped = 0
     total_row_scraped = scraped_documents
     page_number = scraped_documents + 1
@@ -561,7 +561,7 @@ def handle_table(driver: WebDriver) -> None:
             navigate_to_next_page(driver)
             print("[🔁Next Page] Navigated to the next page.") 
             current_row_scraped = 0 
-        
+            
         if total_row_scraped >= documents_to_scrape:
             break
 
