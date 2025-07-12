@@ -516,17 +516,41 @@ def click_elements_per_row(driver: WebDriver, total_row_scraped: int, page_numbe
 
 
 ## Used to paginate X amount of time in the Subcontent Page 
-def initial_pagination(driver: WebDriver) -> None:
+def initial_pagination(driver: WebDriver, pages_to_advance: int ) -> int:
 
     ## The page -1
-    for i in range (39):
-        WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
+    for _ in range (pages_to_advance):
+        try:
+            WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Go to next page']"))).click()
+        except Exception as e:
+            print(f"Failed to click 'Next Page' button: {e}")
+            break
+
+    time.sleep(1)
+    return (pages_to_advance) * 20
+
+def get_page_number (scraped_amt: int) -> int:
+    
+    return int(scraped_amt / 20)
 
 def handle_table(driver: WebDriver) -> None:
-    documents_to_scrape = get_number_of_documents(driver)
+
+    ## Change this to the amount you want to jump to
+    scraped_documents = initial_pagination(driver, get_page_number(1480))
+    # print(f"[TEST] Scraped Documents:", scraped_documents)
+
+    #Bring this back if start from start
+    # documents_to_scrape = get_number_of_documents(driver) 
+
+    documents_to_scrape = get_number_of_documents(driver) - scraped_documents
+    # print(f"[TEST] Documents to Scrape:", documents_to_scrape)
     current_row_scraped = 0
     total_row_scraped = 0
-    page_number = 1
+
+    #Bring this back if start from start
+    # page_number = 1
+
+    page_number = scraped_documents + 1
     max_rows_per_page = 20 ## adjust this later in the config 
 
     while total_row_scraped != documents_to_scrape:
