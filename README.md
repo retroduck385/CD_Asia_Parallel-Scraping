@@ -1,5 +1,7 @@
 # CDAsia Web Scraping using Threading
 
+Current Working Code is in josh-fixing-code branch
+
 Step 1 Create a Virtual Environment:
 
 python -m venv venv
