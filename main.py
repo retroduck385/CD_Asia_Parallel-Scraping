@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "19",
-                    "subcontentTitle": "Revenue Memorandum Order",
+                    "subcontentItemNo": "10",
+                    "subcontentTitle": "Revenue Audit Memorandum Orders",
                     "case": [
                                
                     ]
@@ -96,7 +96,7 @@ def get_number_of_documents(driver: WebDriver) -> int:
 def navigate_to_next_page(driver: WebDriver) -> None:
     try:
         next_button = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[2]/nav/ul/li[10]/button"))
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[2]/nav/ul/li[5]/button[1]"))
         )
 
         if "Mui-disabled" in next_button.get_attribute("class"):
@@ -536,17 +536,17 @@ def get_page_number (scraped_amt: int) -> int:
 def handle_table(driver: WebDriver) -> None:
 
     ## Change this to the amount you want to jump to
-    scraped_documents = initial_pagination(driver, get_page_number(1480))
-    documents_to_scrape = get_number_of_documents(driver)
-    current_row_scraped = 0
-    total_row_scraped = scraped_documents
-    page_number = scraped_documents + 1
+    # scraped_documents = initial_pagination(driver, get_page_number(1480))
+    # documents_to_scrape = get_number_of_documents(driver)
+    # current_row_scraped = 0
+    # total_row_scraped = scraped_documents
+    # page_number = scraped_documents + 1
 
     #Bring this back if start from start
-    # documents_to_scrape = get_number_of_documents(driver) 
-    # current_row_scraped = 0
-    # total_row_scraped = 0
-    # page_number = 1
+    documents_to_scrape = get_number_of_documents(driver) 
+    current_row_scraped = 0
+    total_row_scraped = 0
+    page_number = 1
 
     max_rows_per_page = 20 ## adjust this later in the config 
 
@@ -727,7 +727,11 @@ def main():
 
     ## CSS Selector for the subgroup of the content group/content item to click
     ## Revenue Memorandum Orders
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(14) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(14) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Revenue Audit Memorandum Orders
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(10) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
     
     try:
         scrape(driver, base_url, item_xpath, content_group_xpath, content_subgroup_css_selector)
@@ -735,7 +739,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Revenue_Revenue_Memorandum_Order(2).json"
+        filename = "BIR_Revenue_Audit_Memorandum_Orders.json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
