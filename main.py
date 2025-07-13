@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "5",
-                    "subcontentTitle": "Joint Issuances",
+                    "subcontentItemNo": "16",
+                    "subcontentTitle": "Revenue Operations Memoranda",
                     "case": [
                                
                     ]
@@ -96,7 +96,7 @@ def get_number_of_documents(driver: WebDriver) -> int:
 def navigate_to_next_page(driver: WebDriver) -> None:
     try:
         next_button = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[2]/nav/ul/li[5]/button[1]"))
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/main/div/div/div/div/div/div/div[1]/div[2]/nav/ul/li[7]/button"))
         )
 
         if "Mui-disabled" in next_button.get_attribute("class"):
@@ -733,7 +733,11 @@ def main():
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(10) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     ## Joint Issuances
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(5) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(5) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Revenue Operations Memoranda
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(16) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
     
     try:
         scrape(driver, base_url, item_xpath, content_group_xpath, content_subgroup_css_selector)
@@ -741,7 +745,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Joint_Issuances.json"
+        filename = "BIR_Revenue_Operations_Memoranda.json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
