@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "16",
-                    "subcontentTitle": "Revenue Operations Memoranda",
+                    "subcontentItemNo": "8",
+                    "subcontentTitle": "Regional Revenue Memorandum Circular",
                     "case": [
                                
                     ]
@@ -736,16 +736,25 @@ def main():
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(5) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     ## Revenue Operations Memoranda
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(16) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(16) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
-    
+    ## Primer  
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(7) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Citizen’s Charter 
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(1) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Regional Revenue Memorandum Circular 
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(8) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+
     try:
         scrape(driver, base_url, item_xpath, content_group_xpath, content_subgroup_css_selector)
     except Exception as e:
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Revenue_Operations_Memoranda.json"
+        filename = "BIR_Regional_Revenue_Memorandum_Circular.json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
