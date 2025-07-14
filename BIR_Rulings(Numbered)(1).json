@@ -1,0 +1,953 @@
+{
+    "libraryItemNo": 3,
+    "libraryName": "Taxation",
+    "contents": [
+        {
+            "contentItemNo": "1",
+            "contentTitle": "Bureau of Internal Revenue (BIR)",
+            "subContents": [
+                {
+                    "subcontentItemNo": "20",
+                    "subcontentTitle": "Rulings (Numbered)",
+                    "case": [
+                        {
+                            "regulationNo": "1",
+                            "Original Law": {
+                                "Date": "May 15, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. PSH-177-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=35cb584d&title=Pueblo%20De%20Oro%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20PSH-177-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that PUEBLO DE ORO DEVELOPMENT CORPORATION (the Company), with Taxpayer's Identification Number 000-000-000-000, is exempt from income tax and creditable withholding tax (CWT) pursuant to Section 20 of Republic Act (RA) No. 7279 on its income received directly in connection with its sale of socialized housing units to qualified beneficiaries in Familia Apartments Phase 1, to wit: HTcADC\n\nBuildings\n\nLicense to Sell Nos.\n\nSaleable Units\n\nFamilia Apartment Phase 1-Building A\n\n029411\n\n60\n\nFamilia Apartment Phase 1-Building B\n\n029412\n\n60\n\nFamilia Apartment Phase 1-Building C\n\n029413\n\n80\n\nFamilia Apartment Phase 1-Building D\n\n029414\n\n80\n\nFamilia Apartment Phase 1-Building E\n\n029415\n\n60\n\nTOTAL\n\n340\n\nlocated at Pueblo de Oro Township, Carmen, Cagayan de Oro City, a project duly registered with the Housing and Land Use Regulatory Board (HLURB) under Certificate of Registration No. 24131, provided that the ceiling price per house and lot package does not exceed P450,000.00 per unit except for Units B-205, C-112, D-101, D-205 and D-207, the ceiling price of which is P600,000.00 per unit. [1]\n\nMoreover, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00 and below, is value-added tax (VAT)-exempt under Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that beginning January 1, 2021, the VAT exemption shall only apply to the sale of house and lot and other residential dwellings with selling price of not more than P3,199,200.00, as adjusted to P3,600,000.00 [2] to take effect beginning January 1, 2024. The sale of residential lot only, regardless of value, is subject to VAT.\n\nNonetheless, it is observed that documentary stamp tax (DST) is not one of the taxes covered by the tax exemption clause in Section 20 of RA No. 7279. Such being the case, the owner/project developer/seller shall be liable to pay the DST on the documents conveying the properties imposed under Section 196 of the Tax Code of 1997, as amended, based on the consideration contracted to be paid for such realties or on their fair market value determined in accordance with Section 6 (E) of the same Code, whichever is higher. Likewise, lots/units classified as Economic Housing, not being covered by RA No. 7279, shall be subject to the payment of appropriate taxes.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above. CAIHTE\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 15th day of May, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption from income, CWT and VAT covers only income directly attributable to the revenues generated from the 340 socialized housing units in Familia Apartments Phase I, located at Pueblo de Oro Township, Carmen, Cagayan de Oro City.\n\n2. The company shall submit the sworn statement of the buyer that he is eligible as a socialized housing beneficiary under Section 5 (A) of Revenue Regulations No. 11-97 to the BIR during the processing of the Certificate Authorizing Registration (CAR) for the transfer of the title of the socialized housing unit.\n\n3. It is understood that the CAR shall only be issued after it is established upon proper verification by the Revenue District Officer concerned that, considering the rules on valuation of real property, the actual selling price per sale transaction of the socialized house and lot packages in this case does not really exceed P450,000.00 per unit.\n\n4. List of Saleable units per HLURB License to Sell, granted by the HLURB, Northern Mindanao, to wit:\n\nLicense to Sell No.\n\nUnit No.\n\nNo. of Units\n\nTypes of Units\n\n029411\nBuilding A\n\nA-201 to A-220\n\n20\n\nEconomic Housing\n\nA-301 to A-320\n\n20\n\nEconomic Housing\n\nA-401 to A-420\n\n20\n\nSocialized Housing\n\n029412\nBuilding B\n\nB-201 to B-220\n\n20\n\nSocialized Housing\n\nB-301 to B-320\n\n20\n\nSocialized Housing\n\nB-401 to B-420\n\n20\n\nSocialized Housing\n\n029413\nBuilding C\n\nC-201 to C-220\n\n20\n\nSocialized Housing\n\nC-301 to C-320\n\n20\n\nSocialized Housing\n\nC-401 to C-420\n\n20\n\nSocialized Housing\n\n029414\nBuilding D\n\nD-201 to D-220\n\n20\n\nSocialized Housing\n\nD-301 to D-320\n\n20\n\nSocialized Housing\n\nD-401 to D-420\n\n20\n\nSocialized Housing\n\n029415\nBuilding E\n\nE-201 to E-220\n\n20\n\nSocialized Housing\n\nE-301 to E-320\n\n20\n\nSocialized Housing\n\nE-401 to E-420\n\n20\n\nSocialized Housing\n\n1. The maximum selling price previously pegged at P450,000.00 per house and lot package was upgraded to P600,000.00 per house and lot package based on amendments inscribed on December 11, 2018 for HLURB License to Sell No. 029412 for Unit B-205, amendment inscribed on April 04, 2019 for HLURB License to Sell No. 029413 for Unit C-112, and amendment inscribed on December 11, 2018 for HLURB License to Sell No. 029414 for Units D-101 and D-207.\n\n2. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 7279",
+                                        "Title": "Urban Development and Housing Act of 1992",
+                                        "Date": "03/24/1992"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "2",
+                            "Original Law": {
+                                "Date": "May 15, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. DT-178-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=6ffba69d&title=-&refNo=Certificate%20of%20Tax%20Exemption%20No.%20DT-178-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that the Deed of Donation dated September 05, 2019, executed by: aScITE\n\nName of Donor\n\nTIN\n\nAddress\n\nMunicipality of Cabatuan\n\n000-000-000-000\n\nBrgy. Zone IV, Rizal Iyala St., Cabatuan, Iloilo\n\nin favor of:\n\nName of Donee\n\nTIN\n\nAddress\n\nDepartment of Education-Cabatuan National High School\n\n000-000-000-000\n\nSerrano Street, Cabatuan, Iloilo\n\nOver the parcel of land described below, to wit:\n\nTransfer Certificate of Title (TCT) No.\n\nTotal Area (sq.m.)\n\nArea Donated (sq.m.)\n\nLocation\n\nT-61076-Lot 4033-D\n\n91,119\n\n4,740\n\nBarangay Ayaman, Cabatuan, Iloilo\n\nbeing a gift in favor of a government entity, is exempt from the payment of the donor's tax pursuant to Section 101 (A) (2) [1] of the National Internal Revenue Code (Tax Code) of 1997, as amended.\n\nMoreover, the Deed of Donation is likewise not subject to the documentary stamp tax (DST) prescribed under Section 196 of the Tax Code, as amended, but only to the DST imposed under Section 188 of the Tax Code, as amended.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 15th day of May, 2025. DETACa\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\n1. Renumbered by Republic Act No. 10963.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "3",
+                            "Original Law": {
+                                "Date": "May 15, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-176-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=d3a43ba2&title=Lynville%20Land%20Development%20Corp&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-176-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO WHOM IT MAY CONCERN :\n\nThis certifies that LYNVILLE LAND DEVELOPMENT CORP. [1] (the company) (TIN 000-000-000-000) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenue generated in connection with its economic and low-cost housing project, Lynville Homes Malvar 2 Sonera Phase 1, consisting of 398 house and lot to be used solely for family home or dwelling purposes located at Brgys. Santiago and San Fernando, Malvar, Batangas, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2022-149 dated October 03, 2022, for a period of three (3) years beginning from October 2022 or the actual start of commercial operation/selling, whichever is earlier, but in no case earlier than the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. HEITAD\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [2] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [3]\n\nHowever, the sale in excess of the 398 house and lot units covered under its Department of Human Settlements and Urban Development Provisional License to Sell No. 819, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the applicable taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 15th day of May, 2025. aDSIHc\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the License to Sell shall not be sold for more than P4,000,000.00 per unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding P2.0M and to be used solely for family home or dwelling purposes and not for commercial purposes such as leasing, retail stores, offices, etc., shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as part of the revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH from its BOI-registered housing project is subject to the compliance with the provisions of the Specific Terms and Conditions of its BOI Registration.\n\n4. Pursuant to Section 4 of the RA No. 10708, [4] the Company is required to file its tax returns and pay their tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA 11534, [5] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receive compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it has been complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. ATICcS\n\n1. Formerly Lynville Realty and Development Corporation.\n\n2. As adjusted using the 2010 Consumer Price Index values per Revenue Regulations \"RR\" No. 8-2021 dated June 11, 2021.\n\n3. Sale of lot only, regardless of the price, shall be subject to VAT starting January 1, 2021 pursuant to RA No. 10963.\n\n4. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n5. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "4",
+                            "Original Law": {
+                                "Date": "May 15, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-175-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=bf27725b&title=Raemulan%20Lands,%20Inc.&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-175-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that RAEMULAN LANDS, INC. (the Company) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, PAGSINAG PLACE, consisting of 1,234 house and lot units used solely for family home or dwelling purposes, located at Brgy. Catmon, Sta. Maria, Bulacan, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2022-168 dated November 14, 2022, for a period of four (4) years beginning from November 2022 or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. ETHIDa\n\nMoreover, the sale by the Company of residential house and lot and other residential dwellings valued at P3,199,200.00, [1] as adjusted to P3,600,000.00 beginning January 1, 2024 and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of 1,234 house and lot units provided under its BOI Certificate of Registration No. 2022-168, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 15th day of May, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. TIADCc\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of housing units (Pagsinag Place-Brgy. Catmon, Sta. Maria, Bulacan) with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration.\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receive compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. cSEDTC\n\n1. As adjusted using the Consumer Price Index values per RR No. 1-2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 1, 2021 pursuant to RA No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "5",
+                            "Original Law": {
+                                "Date": "May 13, 2025",
+                                "Reference Number": "BIR RULING NO. OT-174-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=1dc4de73&title=Elihu%20A.%20Yba%C3%B1ez&refNo=BIR%20Ruling%20No.%20OT-174-2025",
+                                "Details": {
+                                    "Details": "Elihu A. Yba\u00f1ez\nCommissioner\nPresidential Commission on Good Government\nOrtigas Center San Antonio, Pasig City\n\nAttention: Clarence Clifford K. De Guzman\n\nDirector, Legal Department\n\nPresidential Commission on Good Government\n\nThis refers to your letter requesting for a confirmation of the exemption from payment of capital gains tax (CGT), Value-Added Tax (VAT) and other related taxes on the sale through public auction of nine (9) parcels of land located at Brgy. San Francisco, Tagaytay City and one (1) class \"A\" share of the Makati Sports Club, Inc. covered by Certificate No. A-3077. HTcADC\n\nIt is represented that the subject properties were forfeited in favor of the Republic of the Philippines by virtue of a final judgment by the Supreme Court in the case of Heirs of Jolly Bugarin vs. Republic of the Philippines. [1] As a designated disposition entity by the Privatization Council (PrC), the Presidential Commission on Good Government (PCGG) sold the abovementioned properties through public auction to AAA on September 23, 2024. Relative to payment of taxes, the bid documents for the sale of the said properties as well as the Deed of Absolute Sale provide that transfer costs, registration fees, documentary stamps, notarial fees and other costs related to the sale shall be for the account of the successful bidder while CGT, VAT and real property taxes that may have accrued prior to the execution of the Deed of Sale, shall be shouldered by the Seller.\n\nIn reply, Section 32 (B) (7) (b) of the National Internal Revenue Code of 1997, as amended (Tax Code) provides that:\n\n\"SEC. 32. Gross Income. \u2014\n\nxxx xxx xxx\n\n(B) Exclusions from Gross Income. \u2014 The following items shall not be included in gross income and shall be exempt from taxation under this Title:\n\nxxx xxx xxx\n\n(7) Miscellaneous Items. \u2014\n\nxxx xxx xxx\n\n(b) Income Derived by the Government or its Political Subdivisions. \u2014 Income derived from any public utility or from the exercise of any essential governmental function accruing to the Government of the Philippines or to any political subdivision thereof. CAIHTE\n\nxxx xxx xxx\"\n\nThe Tax Code expressly excludes from gross income, and exempts from income tax, the income derived from the discharge of any essential governmental functions accruing to the Government of the Philippines or to any of its political subdivisions. Since the sale conducted by the PCGG is pursuant to its mandate or in the exercise of essential governmental functions accruing to the Government of the Philippines, [2] then it is exempt from income taxes, and consequently, from CGT, a final tax of six percent (6%) upon the capital gains presumed to have been realized from the sale.\n\nFurthermore, please be informed that Executive Order No. 286 dated July 25, 1987, which created the Sequestered Assets Disposition Authority (SADA) to oversee the disposition of, among others, assets to the PCGG, provides for the exemption of SADA from the payment of taxes, fees and charges under Section 5 thereof, which reads as follows:\n\n\"SEC. 5. Exemption from Taxes, Fees and other Charges. \u2014 The provisions of any law to the contrary notwithstanding, the Authority as well as the sequestered corporations and assets transferred to it, shall be exempt from all taxes, fees, charges, imposts, and assessments arising from or occasioned by the passing of title over such corporations or assets from the said corporations to the Authority and/or from the National Government to a private acquisitor or buyer imposed by the National Government or any subdivision thereof; Provided, that in case where government institutions acquired the said assets by foreclosure, the non-payment of similar taxes, fees, charges, imposts and assessments shall not be a bar to the consolidation of title in the foreclosing institutions and the subsequent passing of title to the Authority.\n\nThe sale or transfer of such corporations of assets shall not be enjoined or hindered by the existence of any liens by way of taxes, charges or other assessments in favor of the government at the time of sale or transfer; Provided, that the proceeds from such sale or transfer shall be subject to the tax lien and shall first be applied to satisfy such obligations secured by such liens.\"\n\nThe exemption from taxes, fees, charges, imposts, and assessments was given to the PCGG when SADA was transferred to the PCGG by virtue of Executive Order No. 149 dated December 28, 1993 on the \"Streamlining of the Office of the President\" which provides that:\n\n\"3.3 Transfer of Regular Agencies for Administrative Supervision and Eventual Abolition. The following agencies from the Office of the President are hereby transferred to the departments and/or agencies indicated hereunder, and shall be eventually abolished in accordance with law and the terms of Section 5 of this Executive Order: aScITE\n\nxxx xxx xxx\n\n(e) The Sequestered Assets Disposition Authority to the Presidential Commission on Good Government;\n\nxxx xxx xxx\n\n5.3 Scope of Transfer. Any transfer of an agency or corporation shall include the functions, appropriations, funds, records, equipment, facilities, other properties, choses in action, and assets and liabilities of the transferred agency or corporation, as well as the personnel thereof.\"\n\nIn view thereof, this Office is of the opinion and hereby holds that the sale through public auction of nine (9) parcels of land and sale of one (1) class \"A\" share of the Makati Sports Club, Inc. by the PCGG in favor of AAA is exempt from capital gains tax and documentary stamp tax.\n\nThis ruling is being issued on the basis of the foregoing facts as represented. However, if upon investigation, it will be disclosed that the facts are different, then this ruling shall be considered null and void.\n\nVery truly yours,\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\n1. G.R. No. 174431, August 6, 2012.\n\n2. Administrative Order No. 241 dated October 4, 1991.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            }
+                        },
+                        {
+                            "regulationNo": "6",
+                            "Original Law": {
+                                "Date": "May 6, 2025",
+                                "Reference Number": "BIR RULING NO. OT-171-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=821c005b&title=PNOC%20Exploration%20Corporation&refNo=BIR%20Ruling%20No.%20OT-171-2025",
+                                "Details": {
+                                    "Details": "RA No. 11210; 2.78.1 (B) (1) (e) of Revenue Regulations No. 2-98;\nRevenue Memorandum Circular No. 105-2019\n\nPNOC Exploration Corporation\nPNOC Building 1, Energy Center\nRizal Drive, Bonifacio Global City\nTaguig 1634\n\nAttention: AAA\n\n_______________\n\nGentlemen :\n\nThis refers to your request for legal opinion on whether the maternity leave benefits under Republic Act (RA) No. 11210 or the \"105-Day Expanded Maternity Leave Law\" granted to the employees of PNOC Exploration Corporation (\"PNOC EC\") are exempt from income tax. EcTCAD\n\nPNOC EC is the upstream oil, gas and coal subsidiary of the state-owned Philippine National Oil Company (\"PNOC\"). It is a government-owned or controlled corporation (\"GOCC\") mandated by the government through the Department of Energy to take the lead in exploration, development, and production of the country's oil, gas, and coal resources.\n\nIt is represented that as a GOCC without a charter, PNOC EC is not under the authority of the Civil Service Commission (CSC) under the 1987 Constitution [1] and is not covered by Civil Service Laws pursuant to CSC MC No. 5, series of 2021.\n\nThe Social Security System (\"SSS\") certified that PNOC EC is duly registered with the SSS as an employer on July 1, 1976. Pursuant to RA No. 11210 and the Implementing Rules and Regulations of RA No. 11199 or the Social Security Law, PNOC EC grants its female pregnant employees maternity leave benefits or a full pay based on the employee's average monthly salary credit for the 105-day leave and a salary differential to be paid, if any.\n\nIn this regard, a legal opinion is requested as to whether the maternity leave benefits, including the salary differential, granted to PNOC EC's employees is exempt from income tax considering that PNOC EC is a GOCC without a charter and is registered with the SSS.\n\nIn reply, Section 3 of RA No. 11210 grants any female pregnant employee a maternity leave of 105 days with full pay. This full pay shall consist of the SSS maternity benefit computed based on the employee's average daily salary credit and salary differential to be paid by the employer, if any. [2] The salary differential to be paid by the employer is the difference between the full salary of the female employee during her maternity leave and the actual cash benefits received from the SSS. [3] SDHTEC\n\nIn connection therewith, Section 2.78.1 (B) (1) (e) of Revenue Regulations No. 2-98 exempts from withholding tax on compensation the payments of benefits made under the Social Security Law, viz.:\n\n\"2.78.1. WITHHOLDING OF INCOME TAX ON COMPENSATION INCOME. \u2014 (B) Exemptions from Withholding Tax on Compensation. \u2014 The following income tax payments are exempted from the requirement of withholding tax on compensation but may be subject to income tax depending on the nature/sources of income earned by the individual recipient.\n\n(1) Renumerations received as an incident of employment, as follows:\n\nxxx xxx xxx\n\n(e) Payments of benefits made under the Social Security Act of 1954, as amended; and\"\n\nIn addition, the Bureau of Internal Revenue clarified in Revenue Memorandum Circular No. 105-2019 that the full pay maternity benefit includes the salary differential as its component. Therefore, the salary differential is considered part of the maternity benefit. Considering that the above-quoted provision does not provide any qualification in granting tax exemption on payments of benefits under the SSS law, the maternity benefits, including the salary differential, are exempt from income and withholding taxes. [4] Thus, the exemption from income and withholding taxes covers the full pay SSS maternity benefit consisting of the employee's average daily salary credit and salary differential.\n\nThis ruling is issued on the basis of the facts as represented. However, if upon investigation it shall be disclosed that the actual facts are different, then this ruling shall be without force and effect insofar as the herein parties are concerned.\n\nVery truly yours,\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\n1.Article IX, Section 2 (1) of the 1987 Constitution:\n\n\"The civil service embraces all branches, subdivisions, instrumentalities, and agencies of the Government, including government-owned or controlled corporations with original charters.\"\n\n2. Section 2 of the Implementing Rules and Regulations of Republic Act No. 11210.\n\n3. SSS Circular No. 2019-009 and DOLE Department Advisory No. 01.\n\n4. Revenue Memorandum Circular No. 105-2019.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "IRR of RA 11199",
+                                        "Title": "Implementing Rules and Regulations of Republic Act No. 11199 (Social Security Act of 2018)",
+                                        "Date": "06/02/2019"
+                                    },
+                                    {
+                                        "Reference Number": "IRR of RA 11210",
+                                        "Title": "Implementing Rules and Regulations of the 105-Day Expanded Maternity Leave Law (R.A. No. 11210)",
+                                        "Date": "05/01/2019"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 11210",
+                                        "Title": "105-Day Expanded Maternity Leave Law",
+                                        "Date": "02/20/2019"
+                                    },
+                                    {
+                                        "Reference Number": "-",
+                                        "Title": "The 1987 Constitution",
+                                        "Date": "02/02/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Memorandum Circular No. 105-19",
+                                        "Title": "Clarifies the Proper Tax Treatment of Maternity Leave Benefits under RA No. 11210, Otherwise Known as the \"105-Day Expanded Maternity Leave Law\"",
+                                        "Date": "09/03/2019"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ],
+                                "Labor and Social Legislation": [
+                                    {
+                                        "Reference Number": "DOLE Department Advisory No. 01, s. 2019",
+                                        "Title": "Guidelines on the Computation of Salary Differential of Female Workers during Her Maternity Leave and Its Criteria for Exemption Pursuant to Republic Act No. 11210 and Its IRR",
+                                        "Date": "07/09/2019"
+                                    },
+                                    {
+                                        "Reference Number": "SSS Circular No. 2019-009",
+                                        "Title": "Guidelines on the Payment of the Maternity Benefit Effective March 11, 2019",
+                                        "Date": "05/17/2019"
+                                    }
+                                ],
+                                "Civil Service": [
+                                    {
+                                        "Reference Number": "CSC Memorandum Circular No. 005, s. 2021",
+                                        "Title": "Amendment to Omnibus Rules on Leave (CSC MC No. 41, s. 1998, as amended)",
+                                        "Date": "04/28/2021"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "7",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. CMP-152-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=1331622b&title=-&refNo=Certificate%20of%20Tax%20Exemption%20No.%20CMP-152-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO WHOM IT MAY CONCERN :\n\nThis certifies that the Deed of Donation dated February 8, 2013 executed by:\n\nName of Donor\n\nTIN\n\nAddress\n\nAAA\n\n000-000-000-000\n\n_______________\n\nin favor of:\n\nName of Donee\n\nTIN\n\nAddress\n\nThe Roman Catholic Bishop of Bacolod\n\n000-000-000-000\n\nRizal-San Juan St., Bacolod City, Negros Occidental\n\ncovering the following property:\n\nTransfer Certificate of Title (TCT) No.\n\nArea\n(in sq. m.)\n\nArea Donated\n(in sq. m.)\n\nLocation\n\nT-128082\n\n3,282\n\n300\n\nBrgy. Cansilayan, District III, Murcia, Negros Occidental\n\nbeing a gift in favor of a religious corporation, is exempt from the payment of the donor's tax pursuant to Section 101 (A) (3) [1] of the National Internal Revenue Code (Tax Code) of 1997, as amended, subject to the condition that not more than thirty percent (30%) of said gift shall be used by the donee for administration purposes.\n\nMoreover, the Deed of Donation is likewise not subject to the documentary stamp tax prescribed under Section 196 of the Tax Code of 1997, as amended, but only to the documentary stamp tax of P15.00 [2] imposed under Section 188 of the same Code. HTcADC\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025. CAIHTE\n\n(SGD.) ROMEO D. LUMAGUI, JR.\n\nCommissioner of Internal Revenue\n\n1. Renumbered by Republic Act (RA) No. 10963 or the TRAIN Law.\n\n2. The old documentary stamp tax rate was used since the donation took place before the effectivity of RA No. 10963.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "8",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. CMP-149-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=be04469a&title=-&refNo=Certificate%20of%20Tax%20Exemption%20No.%20CMP-149-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that the Deed of Absolute Sale dated June 14, 2019, entered into by and between:\n\nName of Sellers [1]\n\nTIN\n\nAddress\n\nAAA m/t BBB\n\n000-000-000-000\n\n_______________\n\nCCC m/t DDD\n\n000-000-000-000\n\n_______________\n\nEEE\n\n000-000-000-000\n\n_______________\n\nFFF\n\n000-000-000-000\n\n_______________\n\nGGG\n\n000-000-000-000\n\n_______________\n\nHHH\n\n000-000-000-000\n\n_______________\n\nIII\n\n000-000-000-000\n\n_______________\n\nJJJ\n\n000-000-000-000\n\n_______________\n\n-and-\n\nName of Homeowners Association (HOA)\n\nTIN\n\nAddress\n\nSariling Atin Homeowners Association, Inc.\n\n000-000-000-000\n\nBrgy. Buenaflor, Tacurong City 9800\n\nover the parcel of land described below, to wit: aScITE\n\nTransfer Certificate of Title No.\n\nTotal Area\n(sq.m.)\n\nTransferred\n(sq.m.)\n\nArea of CMP\n(sq.m.)\n\nLocation\n\nT-22312\n\n47,846\n\n47,846\n\n47,846\n\nBrgy. Buenaflor, Tacurong City 9800\n\nbeing a Community Mortgage Program (CMP), is not subject to capital gains tax pursuant to Section 32 (b) of Republic Act (RA) No. 7279, as amended by RA No. 10884. The transaction is, however, subject to documentary stamp tax under Section 196 of the National Internal Revenue Code (Tax Code) of 1997, as amended.\n\nIt is, however, understood that this Certificate of Tax Exemption (CTE) is never intended and shall not be construed as giving authority to the concerned Register of Deeds to effect transfer of the land title in the name of the buyer without the necessary Certificate Authorizing Registration (CAR) issued by this Bureau. In this regard, this CTE shall be presented to the Revenue District Office (RDO) concerned in order for the latter to issue the CAR. The CAR shall only be issued after the submission of the requirements provided under Revenue Memorandum Order (RMO) No. 15-2003.\n\nThe Bureau of Internal Revenue (BIR) shall conduct verification and post-audit that the actual occupants of the property transferred under the CMP are qualified beneficiaries and therefore, the seller is entitled to exemption from capital gains tax or income tax imposed under Sections 24 (D) (1) and/or 27 (D) (5) of the Tax Code of 1997, as amended. DETACa\n\nThis CTE is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\n1. Special Power of Attorney was granted to CCC to execute the Deed of Absolute Sale on behalf of the landowners for the sale of the property identified and described in TCT No. T-22312.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10884",
+                                        "Title": "Balanced Housing Development Program Amendments",
+                                        "Date": "07/17/2016"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 7279",
+                                        "Title": "Urban Development and Housing Act of 1992",
+                                        "Date": "03/24/1992"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Memorandum Order No. 15-03",
+                                        "Title": "Policies, Guidelines and Procedures in the Processing and Monitoring of One-Time Transactions",
+                                        "Date": "05/08/2003"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "9",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. CMP-148-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=ef273b06&title=-&refNo=Certificate%20of%20Tax%20Exemption%20No.%20CMP-148-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nThis certifies that the Deeds of Absolute Sale, all dated May 18, 2022, entered into by and between:\n\nName of Sellers [1]\n\nTIN\n\nAddress\n\nAAA\n\n000-000-000-000\n\n_______________\n\nBBB\n\n000-000-000-000\n\n_______________\n\nCCC\n\n000-000-000-000\n\n_______________\n\nDDD\n\n000-000-000-000\n\n_______________\n\n-and-\n\nName of Buyer\n\nTIN\n\nAddress\n\nSocial Housing Finance Corporation [2]\n\n000-000-000-000\n\n6/F, BDO Plaza, 8737 Paseo de Roxas, Makati City 1226\n\nover the parcels of land described below, to wit:\n\nTransfer Certificate of Title No.\n\nTotal Area (sq.m.)\n\nTransferred (sq.m.)\n\nArea of CMP (sq.m.)\n\nLocation\n\n060-2021000003 (T-30845)\n\n37,094\n\n37,094\n\n37,094\n\nBrgy. Uwisan, Calamba City, Laguna\n\n060-2022000128\n\n31,562\n\n31,562\n\n31,562\n\nBrgy. Banlic, Calamba City, Laguna\n\n060-2022000129\n\n15,080\n\n15,080\n\n15,080\n\nBrgy. Banlic, Calamba City, Laguna\n\nbeing a Community Mortgage Program (CMP) under Turnkey Modality of Social Housing Finance Corporation, is not subject to capital gains tax (CGT) pursuant to Section 32 (b) of Republic Act (RA) No. 7279, as amended. [3] The transaction is, however, subject to documentary stamp tax under Section 196 of the National Internal Revenue Code of 1997 (Tax Code), as amended. HEITAD\n\nIt is, however, understood that this Certificate of Tax Exemption (CTE) is never intended and shall not be construed as giving authority to the concerned Register of Deeds to effect transfer of the land title in the name of the buyer without the necessary Certificate of Authorizing Registration (CAR) issued by Bureau of Internal Revenue (BIR). In this regard, this CTE shall be presented to the Revenue District Office concerned in order for the latter to issue the CAR. The CAR shall only be issued after the submission of the requirements provided under Revenue Memorandum Order No. 15-2003.\n\nThe BIR shall conduct verification and post-audit that the actual occupants of the property transferred under the CMP are qualified beneficiaries and therefore, the seller is entitled to exemption from CGT imposed under Sections 24 (D) (1) or 27 (D) (5) of the Tax Code, as amended. aDSIHc\n\nThis CTE is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this CTE shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\n1. Baque Corporation is representing the landowners, DDD, CCC, AAA, and BBB by virtue of the Special Powers of Attorney all dated March 10, 2022.\n\n2. For the Project Affected Families of Balai De Calamba Southrail Project Calamba, Laguna.\n\n3. As amended by RA No. 10884 otherwise known as the \"Balanced Housing Development Program Amendments.\"",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10884",
+                                        "Title": "Balanced Housing Development Program Amendments",
+                                        "Date": "07/17/2016"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 7279",
+                                        "Title": "Urban Development and Housing Act of 1992",
+                                        "Date": "03/24/1992"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Memorandum Order No. 15-03",
+                                        "Title": "Policies, Guidelines and Procedures in the Processing and Monitoring of One-Time Transactions",
+                                        "Date": "05/08/2003"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "10",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-167-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=49c7896b&title=Hausland%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-167-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that HAUSLAND DEVELOPMENT CORPORATION (TIN 000-000-000-000), is exempt from income tax and creditable withholding tax (CWT) on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, MANSFIELD RESIDENCES EXTENSION PHASE 1A, 1B & 1C consisting of 193 house and lot units to be used solely for family home or dwelling purposes located at Barangay Si\u00f1ura, Porac, Pampanga, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2022-154 dated October 07, 2022, for a period of three (3) years beginning from October 2022 or actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021 the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess (122 Units) of 193 house and lot units provided under its DHSUD License to Sell No. 2021-05-226, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. ATICcS\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable BIR rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00.\n\n2. In the computation of the project's ITH, the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding Php2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific Terms and Conditions of its BOI Registration. ETHIDa\n\n4. Pursuant to Section 4 of Republic Act (RA) No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226, within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as employer and any of its employees received compensation income subject to compensation withholding tax, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file on or before the 15th day of the fourth month following the close of its accounting period of a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of this Bureau for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended.\n\n1. As adjusted using the 2010 Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to RA No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "11",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-166-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=94a93ed9&title=Cumberland%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-166-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that CUMBERLAND DEVELOPMENT CORPORATION (the company), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, Villa Marcela Phase 1-C, consisting of 445 house and lot units used solely for family home or dwelling purposes, located at Brgy. Pinac-Pinacan, San Rafael, Bulacan, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-113 dated July 23, 2021, for a period of four (4) years beginning from July 2021, or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. TIADCc\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 445 house and lot units provided under its BOI Certificate of Registration No. 2021-113, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 2020-06-055 shall not be sold for more than P1,700,000.00 per house and lot unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. cSEDTC\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. AIDSTE\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "12",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-165-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=1842f741&title=Amanaland%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-165-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that AMANALAND CORPORATION (the Company) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, THE RIDGE PHASE 1, consisting of 798 house and lot units used solely for family home or dwelling purposes, located at Brgy. Nueva Victoria, Mexico, Pampanga, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-122 dated July 27, 2021, for a period of four (4) years beginning from September 2021 or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) Years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of residential house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2] SDAaTC\n\nHowever, the sale in excess of 798 house and lot units provided under its Department of Human Settlements and Urban Development Provisional License to Sell No. 2020-12-151, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell shall not be sold for more than, P1,700,000.00.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of housing units (The Ridge Phase 1-Brgy. Nueva Victoria, Mexico, Pampanga) with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from registered activity. AaCTcI\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration.\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual, tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees received compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. acEHCD\n\n1. As adjusted using the Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "13",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-164-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=ce2f3f71&title=Amanaland%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-164-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that AMANALAND CORPORATION (the Company) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, AZALEA VISTA PHASE 1, consisting of 419 house and lot units used solely for family home or dwelling purposes, located at Brgy. Pangao, Lipa City, Batangas, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-125 dated July 27, 2021, for a period of four (4) years beginning from November 2021 or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of residential house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of 419 house and lot units provided under its Department of Human Settlements and Urban Development Provisional License to Sell No. 207, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. EcTCAD\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell shall not be sold for more than P1,700,000.00.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of housing units (Azalea Vista Phase 1-Brgy. Pangao, Lipa City, Batangas) with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. SDHTEC\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees received compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. HSAcaE\n\n1. As adjusted using the Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "14",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-163-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=03c0b54d&title=Amanaland%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-163-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that AMANALAND CORPORATION (the company), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, The Ridge Phase 3 consisting of 203 house and lot units used solely for family home or dwelling purposes, located at Brgy. Nueva Victoria, Mexico, Pampanga, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-124 dated July 27, 2021, for a period of four (4) years beginning from September 2021, or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 203 house and lot units provided under its BOI Certificate of Registration No. 2021-124, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. AScHCD\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 2020-12-153 shall not be sold for more than P1,700,000.00 per house and lot unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. HESIcT\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. AcICHD\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "15",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-162-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=c9e88986&title=Amanaland%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-162-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that AMANALAND CORPORATION (the company),is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, Azalea Vista Phase 3,consisting of 322 house and lot units used solely for family home or dwelling purposes, located at Brgy. Pangao, Lipa City, Batangas,a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-127 dated July 27, 2021,for a period of four (4) years beginning from November 2021, or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 322 house and lot units provided under its BOI Certificate of Registration No. 2021-127, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. caITAC\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 211 shall not be sold for more than P1,700,000.00 per house and lot unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH),the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. TAIaHE\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. ICHDca\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "16",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-161-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=137dfdc3&title=The%20New%20APEC%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-161-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that THE NEW APEC DEVELOPMENT CORPORATION (the company), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, Saffron Hills, consisting of 687 house and lot units used solely for family home or dwelling purposes, located at Brgy. Duhat, Bocaue, Bulacan, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2022-040 dated April 06, 2022, for a period of four (4) years beginning from April 2022, or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 687 house and lot units provided under its BOI Certificate of Registration No. 2022-040, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. cDHAES\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 2021-09-296 shall not be sold for more than P1,700,000.00 per house and lot unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration.\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year. TCAScE\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended.\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "17",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-160-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=1dd5d88d&title=The%20New%20Apec%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-160-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that THE NEW APEC DEVELOPMENT CORPORATION (the Company) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, CASA ISABEL EXTENSION, consisting of 674 house and lot units used solely for family home or dwelling purposes, located at Brgy. San Isidro Norte, Sto. Tomas, Batangas, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2023-162 dated August 31, 2023, for a Period of three (3) years beginning from September 2023 or the actual start of commercial operations, whichever is earlier, but in no case earlier than the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. ASEcHI\n\nMoreover, beginning January 01, 2021, the sale by the Company of residential house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of 674 house and lot units provided under its Department of Human Settlements and Urban Development Provisional License to Sell No. 421, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P1,700,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 421 shall not be sold for more than P1,700,000.00.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of housing units (Casa Isabel Extension-Brgy. San Isidro Norte, Sto. Tomas, Batangas) with selling price not exceeding PhP1.7M and used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. cTDaEH\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receive compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. ITAaHc\n\n1. As adjusted using the Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "18",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-159-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=73a68409&title=The%20New%20APEC%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-159-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that THE NEW APEC DEVELOPMENT CORPORATION (the company), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, Brentwood Residences Phase 1-B, consisting of 571 house and lot units used solely for family home or dwelling purposes, located at Brgy. Dolores, Capas, Tarlac, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2021-169 dated November 9, 2021, for a period of four (4) years beginning from November 2021, or the actual start of commercial operations/selling, whichever is earlier, but in no case later than three (3) years from the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. cSaATC\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 571 house and lot units provided under its BOI Certificate of Registration No. 2021-169, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell No. 2020-06-040 shall not be sold for more than P1,700,000.00 per house and lot unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. CHTAIc\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. cHDAIS\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "19",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-158-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=975cbff2&title=The%20New%20APEC%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-158-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that THE NEW APEC DEVELOPMENT CORPORATION (the Company) is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, SONOMA RESIDENCES EXTENSION-B, consisting of 575 house and lot units used solely for family home or dwelling purposes, located at Brgy. Sta. Cruz, Sta. Maria, Bulacan, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2022-039 dated April 06, 2022, for a period of three (3) years beginning from April 2022 or the actual start of commercial operations, whichever is earlier, but in no case earlier than the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended. EATCcI\n\nMoreover, beginning January 01, 2021, the sale by the Company of residential house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of 575 house and lot units provided under its Department of Human Settlements and Urban Development Provisional License to Sell No. 2020-12-154, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended.\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the house and lot units covered by the Provisional License to Sell shall not be sold for more than P1,700,000.00.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of housing units (Sonoma Residences Extension-B-Brgy. Sta. Cruz, Sta. Maria, Bulacan) with selling price not exceeding PhP2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration. ISHCcT\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees received compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. DHITCc\n\n1. As adjusted using the Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "20",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-154-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=d6167575&title=Phirst%20Park%20Homes,%20Inc.&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-154-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that PHIRST PARK HOMES, INC. (the Company) (TIN 000-000-000-000), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project, PHIRST PARK HOMES PANDI-PHASE 3A (BATCH 1, 2, & 3) consisting of 301 house and lot units to be used solely for family home or dwelling purposes located at Brgy. Poblacion, Pandi, Bulacan, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2020-252 dated December 23, 2020, for a period of three (3) years beginning from December 2020 or the actual start of commercial operations/selling, whichever is earlier, but in no case earlier than the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021 the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00 [1] and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of 301 house and lot units provided under its Department of Human Settlements and Urban Development License to Sell No. 2020-08-084, if any, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. CAacTH\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The tax exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,000,000.00. Moreover, the 301 House and lot units covered by the License to Sell shall not be sold for more than P1,700,000.00 per unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding Php2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific Terms and Conditions of its BOI Registration. cEaSHC\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO No. 226 and RA No. 11534, within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016.\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as employer and any of its employees receive compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of this BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. IAETDc\n\n1. As adjusted using the 2010 Consumer Price Index values per RR No. 8-2021 dated June 11, 2021.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 08-21",
+                                        "Title": "Amending Certain Provisions of RR No. 4-2021, Which Implemented the VAT and Percentage Tax Provisions under RA No. 11534 (CREATE)",
+                                        "Date": "06/11/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "regulationNo": "21",
+                            "Original Law": {
+                                "Date": "April 25, 2025",
+                                "Reference Number": "CERTIFICATE OF TAX EXEMPTION NO. BOI-LEH-153-2025",
+                                "Subject": null,
+                                "To": null,
+                                "URL": "https://cdasiaonline.com/document?type=law&id=6c31ce7d&title=AXEIA%20Development%20Corporation&refNo=Certificate%20of%20Tax%20Exemption%20No.%20BOI-LEH-153-2025",
+                                "Details": {
+                                    "Details": "CERTIFICATE OF TAX EXEMPTION\n\nTO ALL WHOM IT MAY CONCERN :\n\nThis certifies that AXEIA DEVELOPMENT CORPORATION (the company), is exempt from income tax and creditable withholding tax on its income directly attributable to the revenues generated in connection with its economic and low-cost housing project (horizontal), Alta Tierra Homes Phase 2A-2, consisting of 308 house and lot units used solely for family home or dwelling purposes, located at Brgy. Olaes, General Mariano Alvarez, Cavite, a project duly registered with the Board of Investments (BOI) under Certificate of Registration No. 2012-051 dated March 26, 2012, for a period of three (3) years beginning from July 2012, or the actual start of commercial operations/selling, whichever is earlier, but in no case earlier than the date of registration of the project with the BOI, pursuant to Executive Order (EO) No. 226, otherwise known as the \"Omnibus Investments Code of 1987\" and Section 2.57.5 (B) (2) of Revenue Regulations (RR) No. 2-98, as amended.\n\nMoreover, beginning January 01, 2021, the sale by the Company of house and lot and other residential dwellings valued at P3,199,200.00, as adjusted to P3,600,000.00 [1] to take effect beginning January 1, 2024, and below, is exempt from value-added tax (VAT) pursuant to Section 109 (1) (P) of the National Internal Revenue Code (Tax Code) of 1997, as amended. Provided, however, that the sale of residential lot only, regardless of value, is subject to VAT. [2]\n\nHowever, the sale in excess of the 308 provided under its BOI Certificate of Registration No. 2012-051, including those units used for commercial purposes such as leasing, retail stores, offices, etc., shall be subject to the payment of appropriate taxes under the Tax Code of 1997, as amended. CTIEac\n\nThe grant of tax exemption herein is subject to the compliance with the provisions of applicable Bureau of Internal Revenue (BIR) rules and regulations and the Terms and Conditions stated at the back hereof. The Company is liable, however, for all other applicable taxes not discussed above.\n\nThis Certificate of Tax Exemption is being issued on the basis of the facts and documents as represented and submitted. However, if upon investigation, the BIR ascertains that the facts are different, then this Certificate shall be considered null and void.\n\nIssued this 25th day of April, 2025.\n\n(SGD.) ROMEO D. LUMAGUI, JR.\nCommissioner of Internal Revenue\n\nATTACHMENT\n\nTERMS AND CONDITIONS\nOF THE CERTIFICATE OF TAX EXEMPTION\n\n1. The exemption provided in this certificate shall not cover revenues from units with selling price exceeding P2,500,000.00. Moreover, the house and lot units covered by the License to Sell shall not be sold for more than P1,250,000.00 per unit.\n\n2. In the computation of the project's Income Tax Holiday (ITH), the following shall apply:\n\na. Only income generated from the sale of units of the project with selling price not exceeding P2.0M and to be used solely for family home or dwelling purposes, and not for commercial purposes such as leasing, retail stores, offices, etc. shall be qualified.\n\nb. Interest income from in-house financing shall not be considered as revenues generated from the registered activity.\n\n3. The Company's entitlement to ITH for its BOI-registered housing project is subject to the compliance with the provisions of the Specific and General Terms and Conditions of its BOI Registration.\n\n4. Pursuant to Section 4 of RA No. 10708, [3] the Company is required to file its tax returns and pay its tax liabilities, on or before the deadline as provided under the Tax Code of 1997, as amended, using the electronic system for filing and payment of taxes of the BIR. It shall file with the BOI a complete annual tax incentives report of its income-based tax incentives, VAT and duty exemptions, deductions, credits or exclusions from the tax base, as may be provided under EO 226 and RA No. 11534, [4] within the periods prescribed under RA No. 10708's Implementing Rules and Regulations and Joint Memorandum Circular No. 1-2016 dated September 1, 2016. DcHSEa\n\n5. The Company shall be constituted as a withholding agent for the government if it acts as an employer and any of its employees receives compensation income subject to withholding tax on compensation, or if it makes payments to individuals or corporations subject to the withholding taxes at source as required under Title II, Chapter XIII and Section 57 of the Tax Code of 1997, as amended, and implemented by RR No. 2-98, as amended.\n\n6. The Company is required to file, on or before the 15th day of the fourth month following the close of its accounting period, a Profit and Loss Statement and Balance Sheet with the Annual Information Return under oath, stating its gross income and expenses incurred during the taxable year.\n\n7. Finally, the Company's books of accounts and other pertinent records shall be subject to periodic examination by revenue enforcement officers of the BIR for the purpose of ascertaining whether it is complying with the conditions under which it has been granted tax exemption or tax incentives and its tax liability, if any, pursuant to Section 235 of the Tax Code of 1997, as amended. SaCIDT\n\n1. As adjusted using the 2023 Consumer Price Index values pursuant to RR No. 1-2024 dated Jan. 10, 2024.\n\n2. Sale of lot only, regardless of the price, shall be subject to VAT starting January 01, 2021 pursuant to Republic Act (RA) No. 10963.\n\n3. An Act Enhancing Transparency in the Management and Accounting of Tax Incentives Administered by Investment Promotion Agencies.\n\n4. Corporate Recovery and Tax Incentives for Enterprises Act or CREATE.",
+                                    "Footnote": "Footnotes",
+                                    "Annexes": "No annexes found"
+                                }
+                            },
+                            "Cited Reference": {
+                                "Laws": [
+                                    {
+                                        "Reference Number": "Republic Act No. 11534",
+                                        "Title": "Corporate Recovery and Tax Incentives for Enterprises Act or CREATE",
+                                        "Date": "03/26/2021"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10963",
+                                        "Title": "Tax Reform for Acceleration and Inclusion (TRAIN)",
+                                        "Date": "12/19/2017"
+                                    },
+                                    {
+                                        "Reference Number": "Republic Act No. 10708",
+                                        "Title": "The Tax Incentives Management and Transparency Act (TIMTA)",
+                                        "Date": "12/09/2015"
+                                    },
+                                    {
+                                        "Reference Number": "Executive Order No. 226",
+                                        "Title": "Omnibus Investments Code of 1987",
+                                        "Date": "07/16/1987"
+                                    }
+                                ],
+                                "Taxation": [
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 1-2024",
+                                        "Title": "Further Amending Section 2, Sub-section 4.109-1 (B) (p) of RR No. 4-2021, as Amended by RR No. 8-2021",
+                                        "Date": "01/10/2024"
+                                    },
+                                    {
+                                        "Reference Number": "Revenue Regulations No. 02-98",
+                                        "Title": "Implementing Republic Act No. 8424",
+                                        "Date": "04/17/1998"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

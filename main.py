@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "2",
-                    "subcontentTitle": "Bank Bulletins",
+                    "subcontentItemNo": "20",
+                    "subcontentTitle": "Rulings (Numbered)",
                     "case": [
                                
                     ]
@@ -152,13 +152,11 @@ def extract_row_case(driver: WebDriver, total_row_scraped: int) -> None:
     
     date = get_doc_date(driver)
     reference_number = get_ref_number(driver)
-    subject = get_subject(driver)
-    to_info = get_to_info(driver)
     url = get_url(driver)
     details = get_details(driver)
     cited_reference = get_cited_reference(driver)
-    display_document_info(driver, date, reference_number, subject, to_info, url, cited_reference, details)
-    append_data_info(driver, date, reference_number, subject, to_info, url, cited_reference, details, total_row_scraped)
+    display_document_info(driver, date, reference_number, None, None, url, cited_reference, details)
+    append_data_info(driver, date, reference_number, None, None, url, cited_reference, details, total_row_scraped)
 
 def append_data_info(driver: WebDriver, date: str, ref_number: str, subject_info: str, to_info: str, url: str, cited_reference: dict, details: dict, total_row_scraped: int) -> None:
     regulation_entry = {
@@ -185,12 +183,12 @@ def get_cited_reference(driver: WebDriver) -> dict[str, list[dict[str, str]]]:
     try:
         # Wait for the cited reference table to load
         WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#document-container > div"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, "body > div > main > div > div.MuiBox-root.mui-bgxt5 > div:nth-child(2)"))
         )
         print(f"[✅ STATUS] Cited Reference Table Loaded")
 
         try:
-            container = driver.find_element(By.CSS_SELECTOR, "#document-container > div")
+            container = driver.find_element(By.CSS_SELECTOR, "body > div > main > div > div.MuiBox-root.mui-bgxt5 > div:nth-child(2)")
             print(f"[✅ STATUS] Cited Reference Table Contents Loaded")
         except Exception as e:
             print(f"[❌ ERROR] Failed to locate the table container: {e}")
@@ -536,17 +534,23 @@ def get_page_number (scraped_amt: int) -> int:
 def handle_table(driver: WebDriver) -> None:
 
     ## Change this to the amount you want to jump to
-    # scraped_documents = initial_pagination(driver, get_page_number(1480))
     # documents_to_scrape = get_number_of_documents(driver)
     # current_row_scraped = 0
     # total_row_scraped = scraped_documents
     # page_number = scraped_documents + 1
 
     #Bring this back if start from start
-    documents_to_scrape = get_number_of_documents(driver) 
+    # documents_to_scrape = get_number_of_documents(driver) 
+    # current_row_scraped = 0
+    # total_row_scraped = 0
+    # page_number = 1
+
+    ## For Rulings
+    scraped_documents = initial_pagination(driver, get_page_number(60))
+    documents_to_scrape = 1000
     current_row_scraped = 0
-    total_row_scraped = 0
-    page_number = 1
+    total_row_scraped = scraped_documents
+    page_number = scraped_documents + 1
 
     max_rows_per_page = 20 ## adjust this later in the config 
 
@@ -750,8 +754,11 @@ def main():
     ## Memoranda
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(6) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
-     ## Bank Bulletins
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(2) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    ## Bank Bulletins
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(2) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Rulings (Numbered)
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(20) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
 
 
@@ -761,7 +768,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Bank_Bulletins.json"
+        filename = "BIR_Rulings(Numbered)(3).json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
