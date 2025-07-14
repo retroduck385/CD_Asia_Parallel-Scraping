@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "6",
-                    "subcontentTitle": "Memoranda",
+                    "subcontentItemNo": "2",
+                    "subcontentTitle": "Bank Bulletins",
                     "case": [
                                
                     ]
@@ -748,7 +748,11 @@ def main():
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(8) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     ## Memoranda
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(6) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(6) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+     ## Bank Bulletins
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(2) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
 
 
     try:
@@ -757,7 +761,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Memoranda.json"
+        filename = "BIR_Bank_Bulletins.json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
