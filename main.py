@@ -546,7 +546,7 @@ def handle_table(driver: WebDriver) -> None:
     # page_number = 1
 
     ## For Rulings
-    scraped_documents = initial_pagination(driver, get_page_number(3600))
+    scraped_documents = initial_pagination(driver, get_page_number(4740))
     documents_to_scrape = 5720
     current_row_scraped = 0
     total_row_scraped = scraped_documents
@@ -781,5 +781,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()  
+    main()
 
