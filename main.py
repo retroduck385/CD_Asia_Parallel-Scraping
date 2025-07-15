@@ -546,8 +546,8 @@ def handle_table(driver: WebDriver) -> None:
     # page_number = 1
 
     ## For Rulings
-    scraped_documents = initial_pagination(driver, get_page_number(2180))
-    documents_to_scrape = 3000
+    scraped_documents = initial_pagination(driver, get_page_number(3600))
+    documents_to_scrape = 5720
     current_row_scraped = 0
     total_row_scraped = scraped_documents
     page_number = scraped_documents + 1
@@ -768,7 +768,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Rulings(Numbered)(6).json"
+        filename = "BIR_Rulings(Numbered)(7).json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
