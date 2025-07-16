@@ -768,7 +768,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Rulings(Numbered)(7).json"
+        filename = "BIR_Rulings(Numbered)(8).json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
