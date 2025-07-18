@@ -759,7 +759,7 @@ def main():
     ## Revenue Administrative Orders
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(9) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
-    ## Revenue Administrative Orders
+    ## Revenue Memorandum Circulars
     content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(13) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     try:
