@@ -26,8 +26,8 @@ CASE_CONFIG = {
             "contentTitle": "Bureau of Internal Revenue (BIR)",
             "subContents": [
                 {
-                    "subcontentItemNo": "9",
-                    "subcontentTitle": "Revenue Administrative Orders",
+                    "subcontentItemNo": "13",
+                    "subcontentTitle": "Revenue Memorandum Circulars",
                     "case": [
                                
                     ]
@@ -757,7 +757,10 @@ def main():
     # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(12) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     ## Revenue Administrative Orders
-    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(9) > button > div.MuiListItemText-root.mui-khtx2o > span"
+    # content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(9) > button > div.MuiListItemText-root.mui-khtx2o > span"
+
+    ## Revenue Administrative Orders
+    content_subgroup_css_selector = "body > div > main > div > div > div > div > div > ul > li:nth-child(13) > button > div.MuiListItemText-root.mui-khtx2o > span"
 
     try:
         scrape(driver, base_url, item_xpath, content_group_xpath, content_subgroup_css_selector)
@@ -765,7 +768,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Revenue_Administrative_Orders.json"
+        filename = "BIR_Revenue_Memorandum_Circulars.json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
