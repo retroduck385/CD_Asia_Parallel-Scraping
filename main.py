@@ -535,18 +535,18 @@ def get_page_number (scraped_amt: int) -> int:
 
 def handle_table(driver: WebDriver) -> None:
 
-    ## Change this to the amount you want to jump to
-    # scraped_documents = initial_pagination(driver, get_page_number(1480))
-    # documents_to_scrape = get_number_of_documents(driver)
-    # current_row_scraped = 0
-    # total_row_scraped = scraped_documents
-    # page_number = scraped_documents + 1
-
-    #Bring this back if start from start
-    documents_to_scrape = get_number_of_documents(driver) 
+    # Change this to the amount you want to jump to
+    scraped_documents = initial_pagination(driver, get_page_number(200))
+    documents_to_scrape = get_number_of_documents(driver)
     current_row_scraped = 0
-    total_row_scraped = 0
-    page_number = 1
+    total_row_scraped = scraped_documents
+    page_number = scraped_documents + 1
+
+    # #Bring this back if start from start
+    # documents_to_scrape = get_number_of_documents(driver) 
+    # current_row_scraped = 0
+    # total_row_scraped = 0
+    # page_number = 1
 
     max_rows_per_page = 20 ## adjust this later in the config 
 
@@ -768,7 +768,7 @@ def main():
         print(e)
     finally:
         print(json.dumps(CASE_CONFIG, indent=4, ensure_ascii=False))
-        filename = "BIR_Revenue_Memorandum_Circulars.json"
+        filename = "BIR_Revenue_Memorandum_Circulars(2).json"
         with open(filename, 'w') as file:
             json.dump(CASE_CONFIG, file, indent=4)
 
