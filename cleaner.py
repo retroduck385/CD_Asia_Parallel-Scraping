@@ -10,8 +10,8 @@ STRINGS_TO_REMOVE = [
     "\ncdasiaonline"
 ]
 
-INPUT_FILE = "scraped_output.json"
-OUTPUT_FILE = "cleaned_scraped_output.json"
+INPUT_FILE = "BIR_Rulings(Numbered)(8).json"
+OUTPUT_FILE = "cleaned_BIR_Rulings(Numbered)(8).json"
 
 def clean_text(text):
     if not isinstance(text, str):
